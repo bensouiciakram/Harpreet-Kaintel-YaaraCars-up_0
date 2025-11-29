@@ -14,7 +14,7 @@ class ExistsCheckStrategy(BaseStrategy):
         'No' otherwise.
     """
 
-    def extract(self, page_selector: Selector,**kwargs) -> str:
+    def extract(self, page_selector: Selector,xpath:str,feature:str=None) -> str:
         """
         Check whether a given feature exists on the page.
 
@@ -36,8 +36,6 @@ class ExistsCheckStrategy(BaseStrategy):
                 'Yes' if the feature exists on the page,
                 'No' otherwise.
         """
-        xpath = kwargs.get("xpath")
-        feature = kwargs.get("feature")
         extracted_values = page_selector.xpath(xpath).getall()
 
         feature_lower = feature.lower()

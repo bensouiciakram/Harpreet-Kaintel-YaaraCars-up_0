@@ -8,7 +8,7 @@ class ValueExtractionStrategy(BaseStrategy):
     This is used for normal columns like Brand, Model, Year, EngineSize, etc.
     """
 
-    def extract(self, page_selector: Selector, **kwargs) -> str:
+    def extract(self, page_selector: Selector,xpath:str,feature:str=None) -> str:
         """
         Extract a value from the page using the given XPath.
 
@@ -23,6 +23,5 @@ class ValueExtractionStrategy(BaseStrategy):
             str:
                 The extracted value, or `default` if nothing was found.
         """
-        xpath = kwargs.get("xpath")
         result = page_selector.xpath(xpath).get()
         return result.strip()

@@ -31,6 +31,7 @@ class BaseSheetExtractor:
                 Column(
                     column_name=col_cfg['name'],
                     xpath=col_cfg["xpath"],
+                    feature=col_cfg["name"] if col_cfg["type"] == "exists" else None,
                     strategy=StrategyFactory.create(
                         col_cfg
                     )

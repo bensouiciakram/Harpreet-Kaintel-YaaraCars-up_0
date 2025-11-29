@@ -9,7 +9,7 @@ class Column:
     A Column defines *what* to extract and *how* to extract it.
     """
 
-    def __init__(self, column_name: str,xpath:str, strategy: BaseStrategy):
+    def __init__(self, column_name: str,xpath:str, strategy: BaseStrategy,feature:str=None):
         """
         Initialize a Column.
 
@@ -27,8 +27,9 @@ class Column:
         self.__name = column_name
         self.__xpath = xpath 
         self.__strategy = strategy
+        self.__feature = feature 
 
-    def extract(self, page_selector: Selector,**kwargs):
+    def extract(self, page_selector: Selector):
         """
         Extract the column value from the HTML page using the assigned strategy.
 
@@ -42,7 +43,7 @@ class Column:
                 The extracted value (usually a string, but can be bool, int,
                 or None depending on the strategy).
         """
-        return self.__strategy.extract(page_selector,xpath=self.__xpath,**kwargs)
+        return self.__strategy.extract(page_selector,xpath=self.__xpath,feature=self.__feature)
 
     @property
     def name(self) -> str:
@@ -52,3 +53,7 @@ class Column:
     @property
     def xpath(self) -> str:
         return self.__xpath 
+    
+    @property
+    def feature(self) -> str:
+        return self.__feature 

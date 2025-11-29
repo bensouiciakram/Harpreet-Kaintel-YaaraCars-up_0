@@ -6,7 +6,7 @@ class BaseStrategy:
     Every strategy must implement the `apply()` method.
     """
 
-    def extract(self,page_selector:Selector,xpath:str)->str:
+    def extract(self,page_selector:Selector,xpath:str,feature:str=None)->str:
         """
         Args:
             page_selector (Selector): Selector object that represent the dom of page
