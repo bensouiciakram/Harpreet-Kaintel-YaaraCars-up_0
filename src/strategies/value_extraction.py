@@ -24,4 +24,4 @@ class ValueExtractionStrategy(BaseStrategy):
                 The extracted value, or `default` if nothing was found.
         """
         result = page_selector.xpath(xpath).get()
-        return result.strip()
+        return result.strip() if result else ''
