@@ -1,0 +1,54 @@
+{
+  "Engine & Power": [
+    {
+      "name": "Engine Capacity (liters)",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Engine Capacity (liters)\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Cylinders",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Cylinders\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Drive Type",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Drive Type\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Fuel Tank Capacity (liters)",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Fuel Tank Capacity (liters)\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Fuel Type",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Fuel Type\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Horsepower (bhp)",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Horsepower (bhp)\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Torque (Nm)",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Torque (Nm)\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Transmission",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Transmission\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Top Speed (Km/h)",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Top Speed (Km/h)\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Seating Capacity",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Seating Capacity\")]/following-sibling::div//text()"
+    }
+  ]
+}

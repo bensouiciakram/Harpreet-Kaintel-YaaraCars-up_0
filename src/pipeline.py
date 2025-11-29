@@ -67,7 +67,7 @@ url = 'https://ksa.yallamotor.com/new-cars/nissan/patrol-pick-up/s-automatic'
 url_pipeline = Pipeline(
     url,
     [
-        BaseSheetExtractor('Make Model')
+        BaseSheetExtractor('Engine & Power')
     ]
 )
 
