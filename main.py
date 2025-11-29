@@ -1,5 +1,7 @@
 from camoufox.sync_api import Camoufox
-from parsel import Selector 
+from parsel import Selector
+from src.pipeline import Pipeline
+from src.sheet_extractors.base_sheet_extractor import BaseSheetExtractor 
 
 
 class CarsUrlsExtractor :
@@ -21,7 +23,7 @@ class CarsUrlsExtractor :
                 for url in page_selector.xpath('//div[contains(@data-tab,"nissan")]//a/@href').getall()
             ]
             page.close() 
-            for url in models_urls :
+            for url in models_urls[:1] :
                 page = browser.new_page()
                 page.goto(url)
                 page_selector = Selector(text=page.content())
@@ -40,4 +42,20 @@ class CarsUrlsExtractor :
 
 if __name__ == '__main__':
     extractor = CarsUrlsExtractor('nissan','//a[contains(text(),"View Detail")]/@href')
-    extractor.get_variants_urls()
+    urls = extractor.get_variants_urls()
+    url = list(urls)[0]
+    breakpoint()
+    url_pipeline = Pipeline(
+        url,
+        [
+            BaseSheetExtractor('Engine & Power'),
+            BaseSheetExtractor('Measurements'),
+            BaseSheetExtractor('Safety Features'),
+            BaseSheetExtractor('Interior Features'),
+            BaseSheetExtractor('Exterior Features'),
+            BaseSheetExtractor('Comfort Features'),
+        ]
+    )
+
+
+    url_pipeline.run()

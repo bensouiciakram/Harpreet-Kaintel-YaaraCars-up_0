@@ -2,13 +2,13 @@
 
 from camoufox import Camoufox
 from parsel import Selector
-from extractor import Extractor
+from src.extractor import Extractor
 # from transformer import Transformer
 # from validator import Validator
 # from builder import SpreadsheetBuilder
 # from uploader import Uploader
-from sheet_extractors.base_sheet_extractor import BaseSheetExtractor
-from utils.cache_manager import load_cache,save_cache
+from src.sheet_extractors.base_sheet_extractor import BaseSheetExtractor
+from src.utils.cache_manager import load_cache,save_cache
 
 class Pipeline:
     """
@@ -66,15 +66,3 @@ class Pipeline:
             html_content = page.content()
             save_cache(variant_url, html_content)
             return Selector(text=html_content)
-
-url = 'https://ksa.yallamotor.com/new-cars/nissan/patrol-pick-up/s-automatic'
-
-
-url_pipeline = Pipeline(
-    url,
-    [
-        BaseSheetExtractor('Engine & Power')
-    ]
-)
-
-url_pipeline.run()

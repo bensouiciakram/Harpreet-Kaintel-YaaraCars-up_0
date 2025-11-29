@@ -50,5 +50,1115 @@
       "type": "value",
       "xpath": "//div[contains(text(),\"Seating Capacity\")]/following-sibling::div//text()"
     }
+  ],
+  "Measurements": [
+    {
+      "name": "Length (meters)",
+      "type": "value",
+      "xpath": "//div[text()=\"Length (meters)\"]/following-sibling::div[1]/text()"
+    },
+    {
+      "name": "Width (meters)",
+      "type": "value",
+      "xpath": "//div[text()=\"Width (meters)\"]/following-sibling::div[1]/text()"
+    },
+    {
+      "name": "Height (meters)",
+      "type": "value",
+      "xpath": "//div[text()=\"Height (meters)\"]/following-sibling::div[1]/text()"
+    },
+    {
+      "name": "Wheelbase (meters)",
+      "type": "value",
+      "xpath": "//div[text()=\"Wheelbase (meters)\"]/following-sibling::div[1]/text()"
+    },
+    {
+      "name": "Trunk Capacity (liters)",
+      "type": "value",
+      "xpath": "//div[text()=\"Trunk Capacity (liters)\"]/following-sibling::div[1]/text()"
+    }
+  ],
+  "Safety Features": [
+    {
+      "name": "Var",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "360 Camera",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Airbags",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "BA (Brake Assist)",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Collision Detection",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Fire Extinguisher",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Immobilizer",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Parking Sensors - Front and Rear",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear Camera",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Anti theft alarm",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Hill Assist",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Parallel Parking Assist",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Attention Assist",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Advanced Air Bags System (AABS)",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Seatbelts - Front Only",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Moving object detection system",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Speed Limiter",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Tire Pressure Monitoring Display",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Vehicle Stability Control (VSC)",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "ABS (Anti-lock Brake System)",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Auto Door Lock",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Differential Lock",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Blind Spot Warning",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "EBD (Electronic Brakeforce Distribution)",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Gas Shock Absorber",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "ISO Fix Child Seat Anchors",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Lane Departure Warning",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Pedestrian airbag",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rollover stability control",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Spare Wheel",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Surround Camera",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Traction Control",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Auto Handbrake Release Function",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Security System",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Tire Repair Kit",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Trailer hitch with cover",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Variable Cylinder Management (VCM)",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Adaptive Brake Lights",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Toolkit",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Acceleration Skid Control",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Active Bonnet",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Active Headrests",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Active Understeer Control (AUC)",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Adaptive Suspension Package",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Anti theft wheel bolts",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Cargo area tie down anchors",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Crosswind Assist",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Door Edge Protector",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Dynamic Damper Control",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Dynamic Stability Control",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "First Aid Kit",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Knee Bag - Driver",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Mudguard - Front",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Torsen Limited Slip Differential",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+    }
+  ],
+  "Interior Features": [
+    {
+      "name": "Var",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Center Arm Rest",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Cargo area light",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Foldable Rear Seats with 60:40 Split",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Front Seat Armrest",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Power Outlets",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Seat Adjustment - Automatic",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Footwell Lights",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Scuff Plate",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Seat Memory",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Vanity Mirror",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Heated/Cooled Seats",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Intelligent Key",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Illuminated Door Sills",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Map Reading Lamps",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Digital Clock",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Leather Steering Wheel",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Panoramic Glass Roof",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear Cupholders",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear Pockets",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Speed Sensitive Power Steering",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Trip Computer",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Welcome Light",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Cupholders",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Leather Seats",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Multi Information Display",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Power Steering",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear Lcd screens",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Seats - Comfort",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Steering Tilt Adjustment",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Trip Meter",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Bonnet Light",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Alcantara seats",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Center Console Box",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Central Locking",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Compass",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Conversation Mirror with Sunglasses Holder",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "DVD",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Electric anti-dazzling room mirror",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Leather instrument panel",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Multi Information Display Size",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear AC Vents",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear Entertainment System",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Silver Trim",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Wood Trim",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Electric Curtain - Rear",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Electric Sunroof",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Glove Box Cooling",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear Blinds",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Fabric Seats",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Seat Adjustment - Manual",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Urethane Steering",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+    }
+  ],
+  "Exterior Features": [
+    {
+      "name": "Var",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Acoustic Hood",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Adaptive Headlights",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Automatic Headlight Range Control",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "High Mount Stop Lamp",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Lock and Unlock Sensing Auto Electric Folding Mirror",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Roof Spoiler",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Illuminated Door handles",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Power Tailgate",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Puddle Lamp",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "LED Taillights",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Auto Headlamps",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Headlight Washers",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Electric Opening and Closing of Luggage Door",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "LED Headlights",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Off-Road tyres",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Wheels - Alloy",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Chrome Exhaust Pipes",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "LED foglights",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Off-Road Dampers",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear Wiper",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Power Windows - Front and Rear",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Chrome Door Handles",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Chrome Plated Radiator Grille",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Chrome Door Mirrors",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Door Mirrors with Side Turn Signal",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear Window Defogger",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Daytime Running Lights - LED",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Electric Door Mirrors",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Acoustic Front Windshield",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Alloy Pedals",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Aluminum Wheels",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Body Colored Grille",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Door Reflectors",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Dual Exhaust Tip",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Fog Lamp - Front and Rear",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Front Bumper - Normal",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "HID Headlights",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear Brakes - Ventilated Discs",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Roof Rails",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Running Board - Standard",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Sonar",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Sports Exhaust System",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Tailgate with Hatch",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Towing Hook",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Wheel Size",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Bumper Side Step",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Frameless Doors",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Front Brakes - Ventilated Discs",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Wind Blocker",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Fog Lamp - Rear Only",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Halogen Headlamps",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Manual Headlamps",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Wheels - Steel",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+    }
+  ],
+  "Comfort Features": [
+    {
+      "name": "Var",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "12V Socket - Front Only",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Active Steering",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Apps",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "AUX",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "CD Player",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Drive Computer",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rain Sensing Wipers",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Leather Covered Door Armrest",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Premium Brand Audio System",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "SD Card",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Voice operated control",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Lumbar Support - Manual",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Leather gear shift lever",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "MP3",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Automatic AC",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Climate Control",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Electronic handbrake",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Internet Connectivity",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Navigation System",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Radio",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear audio controls",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Touchscreen",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Wireless Headphones",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "360-Degree Camera",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Adaptive Cruise Control",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Audio Controls on Steering Wheel",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Bluetooth",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Cruise Control",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "HDMI",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Keyless Entry",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Push Button Start",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Rear AC Controls",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Touchpad",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Touchscreen Size",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Temperature Display",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Air COnditioning",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Ashtray",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Auto Dimming Mirror",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Cassette player",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Cigar Lighter",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Climate Controlled Seats",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Live Traffic Information",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Microphone",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Night Vision",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Number of Speakers",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Remote Start",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Remote Windows Down",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Speed Sensitive Windshield Wipers",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "USB",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Ambient Lighting",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Cool box",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Cruise Control Switch on Steering",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Odometer",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    },
+    {
+      "name": "Manual AC",
+      "type": "exists",
+      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    }
   ]
 }

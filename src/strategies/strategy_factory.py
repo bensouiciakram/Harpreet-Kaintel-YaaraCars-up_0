@@ -1,8 +1,8 @@
 from typing import Dict, Any
 
-from strategies.value_extraction import ValueExtractionStrategy
-from strategies.exists_check import ExistsCheckStrategy
-from strategies.base_strategy import BaseStrategy
+from src.strategies.value_extraction import ValueExtractionStrategy
+from src.strategies.exists_check import ExistsCheckStrategy
+from src.strategies.base_strategy import BaseStrategy
 
 
 class StrategyFactory:

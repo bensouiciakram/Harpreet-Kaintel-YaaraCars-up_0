@@ -1,5 +1,5 @@
 from parsel import Selector
-from strategies.base_strategy import BaseStrategy
+from src.strategies.base_strategy import BaseStrategy
 
 class ExistsCheckStrategy(BaseStrategy):
     """

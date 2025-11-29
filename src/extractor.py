@@ -1,6 +1,6 @@
 # extractor.py
 
-from sheet_extractors.base_sheet_extractor import BaseSheetExtractor
+from src.sheet_extractors.base_sheet_extractor import BaseSheetExtractor
 
 class Extractor:
     """

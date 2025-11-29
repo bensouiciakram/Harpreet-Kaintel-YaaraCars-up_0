@@ -1,8 +1,8 @@
 # base_sheet_extractor.py
 import json 
 from pathlib import Path 
-from columns import Column
-from strategies.strategy_factory import StrategyFactory
+from src.columns import Column
+from src.strategies.strategy_factory import StrategyFactory
 
 class BaseSheetExtractor:
     """
