@@ -8,6 +8,7 @@ from extractor import Extractor
 # from builder import SpreadsheetBuilder
 # from uploader import Uploader
 from sheet_extractors.base_sheet_extractor import BaseSheetExtractor
+from utils.cache_manager import load_cache,save_cache
 
 class Pipeline:
     """
@@ -55,11 +56,16 @@ class Pipeline:
         # return transformed_data
     
     def get_page_selector(self,variant_url:str) -> Selector :
+        cached_html = load_cache(variant_url)
+        if cached_html:
+            print(f"Using cached page for {variant_url}")
+            return Selector(text=cached_html)
         with Camoufox() as browser:
             page = browser.new_page()
             page.goto(variant_url)
-            return Selector(text=page.content())
-
+            html_content = page.content()
+            save_cache(variant_url, html_content)
+            return Selector(text=html_content)
 
 url = 'https://ksa.yallamotor.com/new-cars/nissan/patrol-pick-up/s-automatic'
 
