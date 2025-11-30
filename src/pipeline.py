@@ -1,11 +1,12 @@
 # pipeline.py
 from pprint import pprint 
-
+from re import findall,split,sub
 from camoufox import Camoufox
 from playwright.sync_api import Page 
 from parsel import Selector
 from src.extractor import Extractor
 from src.builder import SpreadsheetBuilder
+from src.transformer import Transformer
 # from transformer import Transformer
 # from validator import Validator
 # from uploader import Uploader
@@ -30,7 +31,17 @@ class Pipeline:
         self._page = page 
         self._page_selector = self.get_page_selector(variant_url)
         self.extractor = Extractor(self._page_selector, sheet_extractors)
-        # self.transformer = Transformer()
+        self.transformer = Transformer()
+        self.transformer.add_rule('Make Model','Year',lambda v:findall('\d{4}',v)[0])
+        self.transformer.add_rule('Make Model','Variant',lambda v:split('\d{4}',v)[1])
+        self.transformer.add_rule('Engine & Power','Var',lambda v:split('\d{4}',v)[1])
+        self.transformer.add_rule('Measurements','Var',lambda v:split('\d{4}',v)[1])
+        self.transformer.add_rule('Safety Features','Var',lambda v:split('\d{4}',v)[1])
+        self.transformer.add_rule('Interior Features','Var',lambda v:split('\d{4}',v)[1])
+        self.transformer.add_rule('Exterior Features','Var',lambda v:split('\d{4}',v)[1])
+        self.transformer.add_rule('Comfort Features','Var',lambda v:split('\d{4}',v)[1])
+        self.transformer.add_rule('Make Model','Slug',lambda v:sub('[\s|\(|\)]+','-',v))
+        self.transformer.add_rule('Make Model','Price',lambda v:findall('\d+,\d+',v)[0])
         # self.validator = Validator()
         # self.builder = builder or SpreadsheetBuilder()
         # self.uploader = uploader or Uploader()
@@ -44,15 +55,14 @@ class Pipeline:
         pprint('raw data :')
         pprint(raw_data)
         # 2️⃣ Transform
-        # transformed_data = self.transformer.transform(raw_data)
-
+        transformed_data = self.transformer.transform(raw_data)
         # # 3️⃣ Validate
         # self.validator.validate(transformed_data)
         # # 4️⃣ Build spreadsheet
         builder = SpreadsheetBuilder(
             template_path='template.xlsx'
         )
-        builder.add_raw_data(raw_data)
+        builder.add_raw_data(transformed_data)
         file_path = builder.save("template.xlsx")
         # # 5️⃣ Upload
         # self.uploader.upload(file_path)
