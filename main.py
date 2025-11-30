@@ -27,7 +27,7 @@ class CarsUrlsExtractor :
                 'https://ksa.yallamotor.com' + url 
                 for url in page_selector.xpath('//div[contains(@data-tab,"nissan")]//a/@href').getall()
             ]
-            for url in models_urls :
+            for url in models_urls[:1] :
                 page_selector = self.get_page_selector(url,page)
                 new_urls = [
                         'https://ksa.yallamotor.com' + url 
@@ -52,25 +52,26 @@ class CarsUrlsExtractor :
         save_cache(url, html_content)
         return Selector(text=html_content)
                 
-
+ 
 if __name__ == '__main__':
     extractor = CarsUrlsExtractor('nissan','//a[contains(text(),"View Detail")]/@href')
     urls = extractor.get_variants_urls()
     data = []
     with Camoufox(headless=True) as browser :
         page = browser.new_page()
-        for url in urls :
+        for url in list(urls)[:5] :
             url_pipeline = Pipeline(
                 url,
                 [
+                    BaseSheetExtractor('Make Model'),
                     BaseSheetExtractor('Engine & Power'),
                     BaseSheetExtractor('Measurements'),
                     BaseSheetExtractor('Safety Features'),
                     BaseSheetExtractor('Interior Features'),
                     BaseSheetExtractor('Exterior Features'),
                     BaseSheetExtractor('Comfort Features'),
+                    BaseSheetExtractor('Description'),
                 ],
                 page 
             )
             data.append(url_pipeline.run())
-    breakpoint()

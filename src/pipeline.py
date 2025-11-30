@@ -5,9 +5,9 @@ from camoufox import Camoufox
 from playwright.sync_api import Page 
 from parsel import Selector
 from src.extractor import Extractor
+from src.builder import SpreadsheetBuilder
 # from transformer import Transformer
 # from validator import Validator
-# from builder import SpreadsheetBuilder
 # from uploader import Uploader
 from src.sheet_extractors.base_sheet_extractor import BaseSheetExtractor
 from src.utils.cache_manager import load_cache,save_cache
@@ -43,18 +43,17 @@ class Pipeline:
         raw_data = self.extractor.extract_all()
         pprint('raw data :')
         pprint(raw_data)
-        return raw_data 
         # 2️⃣ Transform
         # transformed_data = self.transformer.transform(raw_data)
 
         # # 3️⃣ Validate
         # self.validator.validate(transformed_data)
-
         # # 4️⃣ Build spreadsheet
-        # for sheet_name, sheet_data in transformed_data.items():
-        #     self.builder.add_sheet(sheet_name, sheet_data)
-        # file_path = self.builder.save("YallaCars_Upload.xlsx")
-
+        builder = SpreadsheetBuilder(
+            template_path='template.xlsx'
+        )
+        builder.add_raw_data(raw_data)
+        file_path = builder.save("template.xlsx")
         # # 5️⃣ Upload
         # self.uploader.upload(file_path)
 
