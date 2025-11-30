@@ -14,20 +14,26 @@ class CarsUrlsExtractor :
         self.__brand = brand 
         self.__xpath = xpath 
         self.__variant_urls = set()
+        self.__models_urls = set()
 
-    
-    def extract_variants_urls(self) -> list[str]:
+    def extract_models_urls(self):
         with Camoufox(headless=True) as browser:
             page = browser.new_page()
             page_selector = self.get_page_selector(
                 self.brand_new_car_template.format(brand=self.__brand),
                 page
             )
-            models_urls = [
+            self.__models_urls = {
                 'https://ksa.yallamotor.com' + url 
                 for url in page_selector.xpath('//div[contains(@data-tab,"nissan")]//a/@href').getall()
-            ]
-            for url in models_urls[:1] :
+            }
+            
+    
+    def extract_variants_urls(self) -> list[str]:
+        self.extract_models_urls()
+        with Camoufox(headless=True) as browser:
+            page = browser.new_page()
+            for url in self.__models_urls :
                 page_selector = self.get_page_selector(url,page)
                 new_urls = [
                         'https://ksa.yallamotor.com' + url 
@@ -41,6 +47,9 @@ class CarsUrlsExtractor :
     def get_variants_urls(self) -> list[str]:
         self.extract_variants_urls()
         return list(self.__variant_urls)
+    
+    def get_models_urls(self) -> list[str]:
+        return list(self.__models_urls)
     
     def get_page_selector(self,url:str,page:Page) -> Selector :
         cached_html = load_cache(url)
@@ -56,10 +65,11 @@ class CarsUrlsExtractor :
 if __name__ == '__main__':
     extractor = CarsUrlsExtractor('nissan','//a[contains(text(),"View Detail")]/@href')
     urls = extractor.get_variants_urls()
+    models_urls = extractor.get_models_urls()
     data = []
     with Camoufox(headless=True) as browser :
         page = browser.new_page()
-        for url in list(urls)[:5] :
+        for url in list(urls) :
             url_pipeline = Pipeline(
                 url,
                 [
@@ -70,8 +80,17 @@ if __name__ == '__main__':
                     BaseSheetExtractor('Interior Features'),
                     BaseSheetExtractor('Exterior Features'),
                     BaseSheetExtractor('Comfort Features'),
-                    BaseSheetExtractor('Description'),
                 ],
                 page 
             )
             data.append(url_pipeline.run())
+        for url in models_urls:
+            url_pipeline = Pipeline(
+                url,
+                [
+                    BaseSheetExtractor('Description')
+                ],
+                page 
+            )
+            url_pipeline.run()
+
