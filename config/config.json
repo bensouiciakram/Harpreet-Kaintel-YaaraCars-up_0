@@ -1,5 +1,156 @@
 {
+  "Make Model": [
+    {
+      "name": "Link",
+      "type": "value",
+      "xpath": "//meta[@property=\"og:url\"]/@content"
+    },
+    { "name": "Year", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Make",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+    },
+    {
+      "name": "Model",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+    },
+    { "name": "Variant", "type": "value", "xpath": "//h1//text()" },
+    { "name": "Slug", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Transmission",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Transmission\")]//following-sibling::div//text()"
+    },
+    {
+      "name": "Fuel Type",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Fuel Type\")]//following-sibling::div//text()"
+    },
+    {
+      "name": "Price",
+      "type": "value",
+      "xpath": "//h1//following-sibling::div[3]//text()"
+    },
+    {
+      "name": "Logo 1",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[1]//img/@src"
+    },
+    {
+      "name": "Logo 2",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[2]//img/@src"
+    },
+    {
+      "name": "Logo 3",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[3]//img/@src"
+    },
+    {
+      "name": "Logo 4",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[4]//img/@src"
+    },
+    {
+      "name": "Logo 5",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[5]//img/@src"
+    },
+    {
+      "name": "Logo 6",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[6]//img/@src"
+    },
+    {
+      "name": "Logo 7",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[7]//img/@src"
+    },
+    {
+      "name": "Logo 8",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[8]//img/@src"
+    },
+    {
+      "name": "Logo 9",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[9]//img/@src"
+    },
+    {
+      "name": "Logo 10",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[10]//img/@src"
+    },
+    {
+      "name": "Logo 11",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[11]//img/@src"
+    },
+    {
+      "name": "Logo 12",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[12]//img/@src"
+    },
+    {
+      "name": "Logo 13",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[13]//img/@src"
+    },
+    {
+      "name": "Logo 14",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[14]//img/@src"
+    },
+    {
+      "name": "Logo 15",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[15]//img/@src"
+    },
+    {
+      "name": "Logo 16",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[16]//img/@src"
+    },
+    {
+      "name": "Logo 17",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[17]//img/@src"
+    },
+    {
+      "name": "Logo 18",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[18]//img/@src"
+    },
+    {
+      "name": "Logo 19",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[19]//img/@src"
+    },
+    {
+      "name": "Logo 20",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[20]//img/@src"
+    }
+  ],
   "Engine & Power": [
+    {
+      "name": "Link",
+      "type": "value",
+      "xpath": "//meta[@property=\"og:url\"]/@content"
+    },
+    {
+      "name": "Brand",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+    },
+    {
+      "name": "Modal",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+    },
+    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
     {
       "name": "Engine Capacity (liters)",
       "type": "value",
@@ -19,6 +170,11 @@
       "name": "Fuel Tank Capacity (liters)",
       "type": "value",
       "xpath": "//div[contains(text(),\"Fuel Tank Capacity (liters)\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Fuel Economy (L/100 Km)",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Fuel Economy (L/100 Km)\")]/following-sibling::div//text()"
     },
     {
       "name": "Fuel Type",
@@ -41,17 +197,53 @@
       "xpath": "//div[contains(text(),\"Transmission\")]/following-sibling::div//text()"
     },
     {
-      "name": "Top Speed (Km/h)",
-      "type": "value",
-      "xpath": "//div[contains(text(),\"Top Speed (Km/h)\")]/following-sibling::div//text()"
-    },
-    {
       "name": "Seating Capacity",
       "type": "value",
       "xpath": "//div[contains(text(),\"Seating Capacity\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Acceleration 0-100 Km/h (sec)",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Acceleration 0-100 Km/h (sec)\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Battery Size (kWh)",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Battery Size (kWh)\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Battery Range km",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Battery Range km\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Motor",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Motor\")]/following-sibling::div//text()"
+    },
+    {
+      "name": "Top Speed (Km/h)",
+      "type": "value",
+      "xpath": "//div[contains(text(),\"Top Speed (Km/h)\")]/following-sibling::div//text()"
     }
   ],
   "Measurements": [
+    {
+      "name": "Link",
+      "type": "value",
+      "xpath": "//meta[@property=\"og:url\"]/@content"
+    },
+    {
+      "name": "Brand",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+    },
+    {
+      "name": "Modal",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+    },
+    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
     {
       "name": "Length (meters)",
       "type": "value",
@@ -80,10 +272,21 @@
   ],
   "Safety Features": [
     {
-      "name": "Var",
-      "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "name": "Link",
+      "type": "value",
+      "xpath": "//meta[@property=\"og:url\"]/@content"
     },
+    {
+      "name": "Brand",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+    },
+    {
+      "name": "Modal",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+    },
+    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
     {
       "name": "360 Camera",
       "type": "exists",
@@ -352,10 +555,21 @@
   ],
   "Interior Features": [
     {
-      "name": "Var",
-      "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "name": "Link",
+      "type": "value",
+      "xpath": "//meta[@property=\"og:url\"]/@content"
     },
+    {
+      "name": "Brand",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+    },
+    {
+      "name": "Modal",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+    },
+    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
     {
       "name": "Center Arm Rest",
       "type": "exists",
@@ -614,10 +828,21 @@
   ],
   "Exterior Features": [
     {
-      "name": "Var",
-      "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "name": "Link",
+      "type": "value",
+      "xpath": "//meta[@property=\"og:url\"]/@content"
     },
+    {
+      "name": "Brand",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+    },
+    {
+      "name": "Modal",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+    },
+    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
     {
       "name": "Acoustic Hood",
       "type": "exists",
@@ -886,10 +1111,21 @@
   ],
   "Comfort Features": [
     {
-      "name": "Var",
-      "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "name": "Link",
+      "type": "value",
+      "xpath": "//meta[@property=\"og:url\"]/@content"
     },
+    {
+      "name": "Brand",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+    },
+    {
+      "name": "Modal",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+    },
+    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
     {
       "name": "12V Socket - Front Only",
       "type": "exists",
@@ -1159,6 +1395,80 @@
       "name": "Manual AC",
       "type": "exists",
       "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+    }
+  ],
+  "Description": [
+    {
+      "name": "Url",
+      "type": "value",
+      "xpath": "//meta[@property=\"og:url\"]/@content"
+    },
+    {
+      "name": "ID",
+      "type": "value",
+      "xpath": "(//div[contains(@class,\"modelSliderOuter\")]//img)[1]/@src"
+    },
+    { "name": "Title", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Make",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+    },
+    {
+      "name": "Model",
+      "type": "value",
+      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+    },
+    { "name": "Model Year", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Price",
+      "type": "value",
+      "xpath": "//span[contains(text(),\"Price\")]/ancestor::div[1]/following-sibling::p//text()"
+    },
+    {
+      "name": "Image_Urls",
+      "type": "value",
+      "xpath": "(//div[@id=\"overview\"]//div[contains(@class,\"slider\")])[1]//img/@src"
+    },
+    {
+      "name": "Transmission",
+      "type": "value",
+      "xpath": "//span[contains(text(),\"Transmission\")]/ancestor::div[1]/following-sibling::p//text()"
+    },
+    {
+      "name": "Body Style",
+      "type": "value",
+      "xpath": "//span[contains(text(),\"Body Style\")]/ancestor::div[1]/following-sibling::p//text()"
+    },
+    {
+      "name": "Fuel Economy",
+      "type": "value",
+      "xpath": "//span[contains(text(),\"Fuel Economy\")]/ancestor::div[1]/following-sibling::p//text()"
+    },
+    {
+      "name": "Horse Power",
+      "type": "value",
+      "xpath": "//span[contains(text(),\"Horsepower\")]/ancestor::div[1]/following-sibling::p//text()"
+    },
+    {
+      "name": "Fuel Type",
+      "type": "value",
+      "xpath": "//span[contains(text(),\"Fuel Type\")]/ancestor::div[1]/following-sibling::p//text()"
+    },
+    {
+      "name": "Top Speed",
+      "type": "value",
+      "xpath": "//span[contains(text(),\"Fuel Type\")]/ancestor::div[1]/following-sibling::p//text()"
+    },
+    {
+      "name": "Dimentions",
+      "type": "value",
+      "xpath": "//span[contains(text(),\"Dimensions\")]/ancestor::div[1]/following-sibling::p//text()"
+    },
+    {
+      "name": "Description",
+      "type": "value",
+      "xpath": "string(//div[@id=\"description\"])"
     }
   ]
 }
