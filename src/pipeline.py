@@ -8,7 +8,6 @@ from parsel import Selector
 from src.extractor import Extractor
 from src.builder import SpreadsheetBuilder
 from src.transformer import Transformer
-# from transformer import Transformer
 # from validator import Validator
 # from uploader import Uploader
 from src.sheet_extractors.base_sheet_extractor import BaseSheetExtractor
@@ -21,7 +20,7 @@ class Pipeline:
     Extract → Transform → Validate → Build → Upload
     """
 
-    def __init__(self, variant_url:str, sheet_extractors:list[BaseSheetExtractor],page:Page, builder=None, uploader=None):
+    def __init__(self, variant_url:str, sheet_extractors:list[BaseSheetExtractor],page:Page, builder:SpreadsheetBuilder=None, uploader=None):
         """
         Args:
             page: parsel Selector containing the HTML content.
@@ -33,10 +32,8 @@ class Pipeline:
         self._page_selector = self.get_page_selector(variant_url)
         self.extractor = Extractor(self._page_selector, sheet_extractors)
         self.transformer = Transformer()
-        self.__output_file = self.create_output_file('output.xlsx')
-        self.builder = SpreadsheetBuilder(
-            template_path=self.__output_file
-        )
+        self.builder = builder 
+
         # self.validator = Validator()
         # self.uploader = uploader or Uploader()
 
@@ -46,20 +43,22 @@ class Pipeline:
         """
         # 1️⃣ Extract
         raw_data = self.extractor.extract_all()
-        pprint('raw data :')
-        pprint(raw_data)
+        # pprint('raw data :')
+        # pprint(raw_data)
+        print('item extracted')
         # 2️⃣ Transform
         transformed_data = self.transformer.transform(raw_data)
+
         # # 3️⃣ Validate
         # self.validator.validate(transformed_data)
-        # # 4️⃣ Build spreadsheet
-
+        
+        # # 4️⃣ add data into spreadsheet
         self.builder.add_raw_data(transformed_data)
-        file_path = self.builder.save(self.__output_file)
+        
         # # 5️⃣ Upload
         # self.uploader.upload(file_path)
 
-        # return transformed_data
+        return transformed_data
     
     def get_page_selector(self,variant_url:str) -> Selector :
         cached_html = load_cache(variant_url)
@@ -71,12 +70,5 @@ class Pipeline:
         save_cache(variant_url, html_content)
         return Selector(text=html_content)
     
-    def create_output_file(self,output_name:str):
-        root = Path(__file__).parents[1]
-        template_path = root.joinpath('template.xlsx')
-        output_path = root.joinpath(output_name)
-        if not output_path.exists():
-            shutil.copy(template_path,output_path)
-        return output_path 
 
         
