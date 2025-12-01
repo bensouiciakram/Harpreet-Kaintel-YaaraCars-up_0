@@ -1427,7 +1427,7 @@
     },
     {
       "name": "Image_Urls",
-      "type": "value",
+      "type": "value_all",
       "xpath": "(//div[@id=\"overview\"]//div[contains(@class,\"slider\")])[1]//img/@src"
     },
     {
