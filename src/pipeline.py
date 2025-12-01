@@ -32,24 +32,6 @@ class Pipeline:
         self._page_selector = self.get_page_selector(variant_url)
         self.extractor = Extractor(self._page_selector, sheet_extractors)
         self.transformer = Transformer()
-        self.transformer.add_rule('Make Model','Year',lambda v:findall('\d{4}',v)[0])
-        self.transformer.add_rule('Make Model','Variant',lambda v:split('\d{4}',v)[1].strip())
-        self.transformer.add_rule('Make Model','Slug',lambda v:sub('[\s|\(|\)]+','-',v).strip('-'))
-        self.transformer.add_rule('Make Model','Price',lambda v:findall('\d+,\d+',v)[0] if findall('\d+,\d+',v) else '')
-        self.transformer.add_rule('Engine & Power','Var',lambda v:split('\d{4}',v)[1].strip())
-        self.transformer.add_rule('Measurements','Var',lambda v:split('\d{4}',v)[1].strip())
-        self.transformer.add_rule('Safety Features','Var',lambda v:split('\d{4}',v)[1].strip())
-        self.transformer.add_rule('Interior Features','Var',lambda v:split('\d{4}',v)[1].strip())
-        self.transformer.add_rule('Exterior Features','Var',lambda v:split('\d{4}',v)[1].strip())
-        self.transformer.add_rule('Comfort Features','Var',lambda v:split('\d{4}',v)[1].strip())
-        self.transformer.add_rule('Description','ID',lambda v:findall('model/(\d+)',v)[0])
-        self.transformer.add_rule('Description','Model Year',lambda v:findall('\d{4}',v)[0])
-        self.transformer.add_rule(
-            'Description',
-            'Price',
-            lambda v:sub('SAR|AED','',v).replace('to','-').strip()
-            if findall('\d+',v) else ''
-        )
         # self.validator = Validator()
         # self.builder = builder or SpreadsheetBuilder()
         # self.uploader = uploader or Uploader()
