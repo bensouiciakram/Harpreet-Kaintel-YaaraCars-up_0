@@ -2,10 +2,61 @@ from pprint import pprint
 from camoufox.sync_api import Camoufox
 from playwright.sync_api import Page 
 from parsel import Selector
+from src.builder import SpreadsheetBuilder
 from src.pipeline import Pipeline
 from src.sheet_extractors.base_sheet_extractor import BaseSheetExtractor
-from src.utils.cache_manager import load_cache, save_cache 
+from src.utils.cache_manager import load_cache, save_cache
+from src.utils.file_manager import create_output_file 
 
+
+chinese_brands = [
+    'byd',
+    'bestune',
+    'dfsk',
+    'lynk-co',
+    'skywell',
+    'exeed',
+    'forthing',
+    'tank',
+    'seres',
+    'kaiyi',
+    'nio',
+    'jmc',
+    'rox',
+    'zeekr',
+    'vgv',
+    'avatr',
+    'maxus',
+    'yangwang',
+    'li-auto',
+    'aito',
+    'riddara',
+    'xpeng',
+    'voyah',
+    'omoda',
+    'jaecoo',
+    'jidu',
+    'xiaomi-auto',
+    'mhero',
+    'deepal',
+    'im-motors',
+    'baic',
+    'changan',
+    'chery',
+    'dongfeng',
+    'dorcen',
+    'gac',
+    'geely',
+    'great-wall',
+    'haval',
+    'hongqi',
+    'jac',
+    'jetour',
+    'kinglong',
+    'mg',
+    'soueast',
+    'zotye'
+]
 
 class CarsUrlsExtractor :
     brand_new_car_template = 'https://{country}.yallamotor.com/new-cars/{brand}'
@@ -62,12 +113,20 @@ class CarsUrlsExtractor :
         html_content = self.__page.content()
         save_cache(url, html_content)
         return Selector(text=html_content)
-                
+
+# test : -----------------------------------------#
+from datetime import datetime 
+start = datetime.now()
+# ----------------------------------------- # BLOCK 2 
  
 if __name__ == '__main__':
+    output_path = create_output_file();
+    builder = SpreadsheetBuilder(
+                    template_path=output_path
+                )
     with Camoufox(headless=True) as browser :
         page = browser.new_page()
-        for brand in ['toyota','nissan']:
+        for brand in ['toyota','nissan'] + chinese_brands:
             for country in ['ksa','uae']:
                 extractor = CarsUrlsExtractor(country,brand,'//a[contains(text(),"View Detail")]/@href',page)
                 variant_urls = extractor.get_variants_urls()
@@ -84,7 +143,8 @@ if __name__ == '__main__':
                             BaseSheetExtractor('Exterior Features'),
                             BaseSheetExtractor('Comfort Features'),
                         ],
-                        page 
+                        page,
+                        builder 
                     )
                     url_pipeline.run()
                 for url in models_urls:
@@ -93,7 +153,15 @@ if __name__ == '__main__':
                         [
                             BaseSheetExtractor('Description')
                         ],
-                        page 
+                        page,
+                        builder
                     )
                     url_pipeline.run()
+    builder.save(output_path)   
+                    
 
+# test : ------------------------------------#
+end = datetime.now()
+duration = (end - start).seconds 
+print(f'the process last : {duration}')
+# ------------------------------------- BLOCK 3
