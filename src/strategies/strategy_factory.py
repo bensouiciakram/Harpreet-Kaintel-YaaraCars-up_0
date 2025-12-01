@@ -2,6 +2,7 @@ from typing import Dict, Any
 
 from src.strategies.value_extraction import ValueExtractionStrategy
 from src.strategies.exists_check import ExistsCheckStrategy
+from src.strategies.value_extraction_all import ValueExtractionAllStrategy
 from src.strategies.base_strategy import BaseStrategy
 
 
@@ -17,6 +18,7 @@ class StrategyFactory:
     # Maps a strategy "type" (defined in config file) to a Python class
     _registry = {
         "value": ValueExtractionStrategy,
+        "value_all":ValueExtractionAllStrategy,
         "exists": ExistsCheckStrategy,
     }
 
