@@ -1,5 +1,6 @@
-# pipeline.py
+import shutil 
 from pprint import pprint 
+from pathlib import Path 
 from re import findall,split,sub
 from camoufox import Camoufox
 from playwright.sync_api import Page 
@@ -32,8 +33,11 @@ class Pipeline:
         self._page_selector = self.get_page_selector(variant_url)
         self.extractor = Extractor(self._page_selector, sheet_extractors)
         self.transformer = Transformer()
+        self.__output_file = self.create_output_file('output.xlsx')
+        self.builder = SpreadsheetBuilder(
+            template_path=self.__output_file
+        )
         # self.validator = Validator()
-        # self.builder = builder or SpreadsheetBuilder()
         # self.uploader = uploader or Uploader()
 
     def run(self) -> dict : 
@@ -49,11 +53,9 @@ class Pipeline:
         # # 3️⃣ Validate
         # self.validator.validate(transformed_data)
         # # 4️⃣ Build spreadsheet
-        builder = SpreadsheetBuilder(
-            template_path='template - Original - Copy.xlsx'
-        )
-        builder.add_raw_data(transformed_data)
-        file_path = builder.save("template - Original - Copy.xlsx")
+
+        self.builder.add_raw_data(transformed_data)
+        file_path = self.builder.save(self.__output_file)
         # # 5️⃣ Upload
         # self.uploader.upload(file_path)
 
@@ -68,3 +70,13 @@ class Pipeline:
         html_content = self._page.content()
         save_cache(variant_url, html_content)
         return Selector(text=html_content)
+    
+    def create_output_file(self,output_name:str):
+        root = Path(__file__).parents[1]
+        template_path = root.joinpath('template.xlsx')
+        output_path = root.joinpath(output_name)
+        if not output_path.exists():
+            shutil.copy(template_path,output_path)
+        return output_path 
+
+        
