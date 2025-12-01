@@ -1458,7 +1458,7 @@
     {
       "name": "Top Speed",
       "type": "value",
-      "xpath": "//span[contains(text(),\"Fuel Type\")]/ancestor::div[1]/following-sibling::p//text()"
+      "xpath": "//span[contains(text(),\"Top Speed\")]/ancestor::div[1]/following-sibling::p//text()"
     },
     {
       "name": "Dimentions",
