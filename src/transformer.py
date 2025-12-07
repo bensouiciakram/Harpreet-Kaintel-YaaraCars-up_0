@@ -16,18 +16,18 @@ class Transformer:
     def __init__(self):
         # Mapping: sheet_name → { column_name → function }
         self._rules = {}
-        self.add_rule('Make Model','Year',lambda v:findall('\d{4}',v)[0] if findall('\d{4}',v) else '')
-        self.add_rule('Make Model','Variant',lambda v:split('\d{4}',v)[1].strip() if len(split('\d{4}',v)) > 1 else '')
+        self.add_rule('Make Model','Year',lambda v:self.clean_with_regex(v,'\d{4}'))
+        self.add_rule('Make Model','Variant',lambda v:self.extract_variant(v))
         self.add_rule('Make Model','Slug',lambda v:sub('[\s|\(|\)]+','-',v).strip('-'))
-        self.add_rule('Make Model','Price',lambda v:findall('\d+,\d+',v)[0] if findall('\d+,\d+',v) else '')
-        self.add_rule('Engine & Power','Var',lambda v:split('\d{4}',v)[1].strip() if len(split('\d{4}',v)) > 1 else '')
-        self.add_rule('Measurements','Var',lambda v:split('\d{4}',v)[1].strip() if len(split('\d{4}',v)) > 1 else '')
-        self.add_rule('Safety Features','Var',lambda v:split('\d{4}',v)[1].strip() if len(split('\d{4}',v)) > 1 else '')
-        self.add_rule('Interior Features','Var',lambda v:split('\d{4}',v)[1].strip() if len(split('\d{4}',v)) > 1 else '')
-        self.add_rule('Exterior Features','Var',lambda v:split('\d{4}',v)[1].strip() if len(split('\d{4}',v)) > 1 else '')
-        self.add_rule('Comfort Features','Var',lambda v:split('\d{4}',v)[1].strip() if len(split('\d{4}',v)) > 1 else '')
-        self.add_rule('Description','ID',lambda v:findall('model/(\d+)',v)[0] if findall('model/(\d+)',v) else '')
-        self.add_rule('Description','Model Year',lambda v:findall('\d{4}',v)[0])
+        self.add_rule('Make Model','Price',lambda v:self.clean_with_regex(v,'\d+,\d+'))
+        self.add_rule('Engine & Power','Var',lambda v:self.extract_variant(v))
+        self.add_rule('Measurements','Var',lambda v:self.extract_variant(v))
+        self.add_rule('Safety Features','Var',lambda v:self.extract_variant(v))
+        self.add_rule('Interior Features','Var',lambda v:self.extract_variant(v))
+        self.add_rule('Exterior Features','Var',lambda v:self.extract_variant(v))
+        self.add_rule('Comfort Features','Var',lambda v:self.extract_variant(v))
+        self.add_rule('Description','ID',lambda v:self.clean_with_regex(v,'model/(\d+)'))
+        self.add_rule('Description','Model Year',lambda v:self.clean_with_regex(v,'\d{4}'))
         self.add_rule(
             'Description',
             'Price',
@@ -73,3 +73,9 @@ class Transformer:
                 cleaned[sheet_name][column_name] = cleaned_value
 
         return cleaned
+
+    def clean_with_regex(self,source:str,regex:str) -> str:
+        return findall(regex,source)[0] if findall(regex,source) else ''
+
+    def extract_variant(self,source:str) -> str:
+        return split('\d{4}',source)[1].strip() if len(split('\d{4}',source)) > 1 else ''
