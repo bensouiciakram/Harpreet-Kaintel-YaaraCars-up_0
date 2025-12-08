@@ -17,7 +17,7 @@ from src.utils.cache_manager import load_cache,save_cache
 class Pipeline:
     """
     Orchestrates the full data workflow:
-    Extract → Transform → Validate → Build → Upload
+    Extract → Transform → Validate → Build 
     """
 
     def __init__(self, variant_url:str, sheet_extractors:list[BaseSheetExtractor],page:Page, builder:SpreadsheetBuilder=None, uploader=None):
@@ -35,7 +35,6 @@ class Pipeline:
         self.builder = builder 
 
         # self.validator = Validator()
-        # self.uploader = uploader or Uploader()
 
     def run(self) -> dict : 
         """
@@ -55,8 +54,6 @@ class Pipeline:
         # # 4️⃣ add data into spreadsheet
         self.builder.add_raw_data(transformed_data)
         
-        # # 5️⃣ Upload
-        # self.uploader.upload(file_path)
 
         return transformed_data
     
