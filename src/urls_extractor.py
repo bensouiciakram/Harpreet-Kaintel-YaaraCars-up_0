@@ -7,13 +7,14 @@ from src.utils.cache_manager import load_cache, save_cache
 class CarsUrlsExtractor :
     brand_new_car_template = 'https://{country}.yallamotor.com/new-cars/{brand}'
 
-    def __init__(self,country:str,brand:str,xpath:str,page:Page):
+    def __init__(self,country:str,brand:str,xpath:str,page:Page,year:int):
         self.__page = page 
         self.__country = country
         self.__brand = brand 
         self.__xpath = xpath 
         self.__variant_urls = set()
         self.__models_urls = set()
+        self.__year = year 
 
     def extract_models_urls(self):
         page_selector = self.get_page_selector(
@@ -25,10 +26,10 @@ class CarsUrlsExtractor :
         self.__models_urls = {
             f'https://{self.__country}.yallamotor.com' + url 
             for url in page_selector.xpath(
-                f'//div[contains(@data-tab,"{self.__brand}")]//a/@href'
+                # f'//div[contains(@data-tab,"{self.__brand}")]//a[contains(@href,"{self.__year}") or contains(@href,"{self.__year+1}")]/@href'
+                f'//div[@id="{self.__brand+str(self.__year)}" or @id="{self.__brand+str(self.__year+1)}"]//a/@href'
             ).getall()
         }
-            
     
     def extract_variants_urls(self) -> list[str]:
         self.extract_models_urls()
@@ -52,7 +53,7 @@ class CarsUrlsExtractor :
     
     def get_page_selector(self,url:str) -> Selector :
         cached_html = load_cache(url)
-        if cached_html:
+        if cached_html: 
             print(f"Using cached page for {url}")
             return Selector(text=cached_html)
         self.__page.goto(url)

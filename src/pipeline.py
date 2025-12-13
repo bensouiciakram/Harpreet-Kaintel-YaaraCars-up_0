@@ -50,7 +50,7 @@ class Pipeline:
         transformed_data = self.transformer.transform(raw_data)
 
         # # 3️⃣ Image download
-        self.image_downloader.download(transformed_data)
+        # self.image_downloader.download(transformed_data)
         
         # # 4️⃣ add data into spreadsheet
         self.builder.add_raw_data(transformed_data)

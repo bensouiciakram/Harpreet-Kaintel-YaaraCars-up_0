@@ -18,7 +18,7 @@ class Transformer:
         self._rules = {}
         self.add_rule('Make Model','Year',lambda v:self.clean_with_regex(v,'\d{4}'))
         self.add_rule('Make Model','Variant',lambda v:self.extract_variant(v))
-        self.add_rule('Make Model','Slug',lambda v:sub('[\s|\(|\)]+','-',v).strip('-'))
+        self.add_rule('Make Model','Slug',lambda v:self.create_slug(v))
         self.add_rule('Make Model','Price',lambda v:self.clean_with_regex(v,'\d+,\d+'))
         self.add_rule('Engine & Power','Var',lambda v:self.extract_variant(v))
         self.add_rule('Measurements','Var',lambda v:self.extract_variant(v))
@@ -79,3 +79,15 @@ class Transformer:
 
     def extract_variant(self,source:str) -> str:
         return split('\d{4}',source)[1].strip() if len(split('\d{4}',source)) > 1 else ''
+    
+    def create_slug(self,title:str) -> str:
+        cleaning_list = [
+            '\s+',
+            '/',
+            '\(',
+            '\)',
+            '"'
+        ]
+        title = sub('|'.join(cleaning_list),'-',title.lower())
+        title = sub('-+','-',title)
+        return title.strip('-')
