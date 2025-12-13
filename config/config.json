@@ -132,6 +132,281 @@
       "name": "Logo 20",
       "type": "value",
       "xpath": "((//div[@class=\"slick-track\"])[1]/div)[20]//img/@src"
+    },
+    {
+      "name": "Logo 21",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[21]//img/@src"
+    },
+    {
+      "name": "Logo 22",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[22]//img/@src"
+    },
+    {
+      "name": "Logo 23",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[23]//img/@src"
+    },
+    {
+      "name": "Logo 24",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[24]//img/@src"
+    },
+    {
+      "name": "Logo 25",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[25]//img/@src"
+    },
+    {
+      "name": "Logo 26",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[26]//img/@src"
+    },
+    {
+      "name": "Logo 27",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[27]//img/@src"
+    },
+    {
+      "name": "Logo 28",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[28]//img/@src"
+    },
+    {
+      "name": "Logo 29",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[29]//img/@src"
+    },
+    {
+      "name": "Logo 30",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[30]//img/@src"
+    },
+    {
+      "name": "Logo 31",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[31]//img/@src"
+    },
+    {
+      "name": "Logo 32",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[32]//img/@src"
+    },
+    {
+      "name": "Logo 33",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[33]//img/@src"
+    },
+    {
+      "name": "Logo 34",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[34]//img/@src"
+    },
+    {
+      "name": "Logo 35",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[35]//img/@src"
+    },
+    {
+      "name": "Logo 36",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[36]//img/@src"
+    },
+    {
+      "name": "Logo 37",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[37]//img/@src"
+    },
+    {
+      "name": "Logo 38",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[38]//img/@src"
+    },
+    {
+      "name": "Logo 39",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[39]//img/@src"
+    },
+    {
+      "name": "Logo 40",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[40]//img/@src"
+    },
+    {
+      "name": "Logo 41",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[41]//img/@src"
+    },
+    {
+      "name": "Logo 42",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[42]//img/@src"
+    },
+    {
+      "name": "Logo 43",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[43]//img/@src"
+    },
+    {
+      "name": "Logo 44",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[44]//img/@src"
+    },
+    {
+      "name": "Logo 45",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[45]//img/@src"
+    },
+    {
+      "name": "Logo 46",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[46]//img/@src"
+    },
+    {
+      "name": "Logo 47",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[47]//img/@src"
+    },
+    {
+      "name": "Logo 48",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[48]//img/@src"
+    },
+    {
+      "name": "Logo 49",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[49]//img/@src"
+    },
+    {
+      "name": "Logo 50",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[50]//img/@src"
+    },
+    {
+      "name": "Logo 51",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[51]//img/@src"
+    },
+    {
+      "name": "Logo 52",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[52]//img/@src"
+    },
+    {
+      "name": "Logo 53",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[53]//img/@src"
+    },
+    {
+      "name": "Logo 54",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[54]//img/@src"
+    },
+    {
+      "name": "Logo 55",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[55]//img/@src"
+    },
+    {
+      "name": "Logo 56",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[56]//img/@src"
+    },
+    {
+      "name": "Logo 57",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[57]//img/@src"
+    },
+    {
+      "name": "Logo 58",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[58]//img/@src"
+    },
+    {
+      "name": "Logo 59",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[59]//img/@src"
+    },
+    {
+      "name": "Logo 60",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[60]//img/@src"
+    },
+    {
+      "name": "Logo 61",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[61]//img/@src"
+    },
+    {
+      "name": "Logo 62",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[62]//img/@src"
+    },
+    {
+      "name": "Logo 63",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[63]//img/@src"
+    },
+    {
+      "name": "Logo 64",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[64]//img/@src"
+    },
+    {
+      "name": "Logo 65",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[65]//img/@src"
+    },
+    {
+      "name": "Logo 66",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[66]//img/@src"
+    },
+    {
+      "name": "Logo 67",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[67]//img/@src"
+    },
+    {
+      "name": "Logo 68",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[68]//img/@src"
+    },
+    {
+      "name": "Logo 69",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[69]//img/@src"
+    },
+    {
+      "name": "Logo 70",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[70]//img/@src"
+    },
+    {
+      "name": "Logo 71",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[71]//img/@src"
+    },
+    {
+      "name": "Logo 72",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[72]//img/@src"
+    },
+    {
+      "name": "Logo 73",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[73]//img/@src"
+    },
+    {
+      "name": "Logo 74",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[74]//img/@src"
+    },
+    {
+      "name": "Logo 75",
+      "type": "value",
+      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[75]//img/@src"
     }
   ],
   "Engine & Power": [
