@@ -5,7 +5,6 @@ CACHE_DIR = Path(__file__).parents[2].joinpath('cache')
 CACHE_DIR.mkdir(exist_ok=True)
 
 def _url_to_filename(url: str) -> Path:
-    # create a hash of the URL for a unique filename
     url_hash = hashlib.md5(url.encode("utf-8")).hexdigest()
     return CACHE_DIR / f"{url_hash}.html"
 

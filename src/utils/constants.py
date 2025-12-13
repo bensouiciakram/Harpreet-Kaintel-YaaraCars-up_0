@@ -48,3 +48,17 @@ CHINESE_BRANDS = [
 ]
 
 ALL_BRAND = ['toyota','nissan'] + CHINESE_BRANDS
+
+VARIANTS_SHEETS_NAMES = [
+                'Make Model',
+                'Engine & Power',
+                'Measurements',
+                'Safety Features',
+                'Interior Features',
+                'Exterior Features',
+                'Comfort Features'
+            ]
+
+MODELS_SHEETS_NAMES = [
+    'Description'
+]
