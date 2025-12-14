@@ -8,8 +8,6 @@ from src.extractor import Extractor
 from src.builder import SpreadsheetBuilder
 from src.transformer import Transformer
 from src.images_downloader import ImagesDownloader
-# from validator import Validator
-# from uploader import Uploader
 from src.sheet_extractors.base_sheet_extractor import BaseSheetExtractor
 from src.utils.cache_manager import load_cache,save_cache
 
@@ -20,7 +18,13 @@ class Pipeline:
     Extract → Transform → Images Download → Build 
     """
 
-    def __init__(self, variant_url:str, sheet_extractors:list[BaseSheetExtractor],page:Page, builder:SpreadsheetBuilder=None, uploader=None):
+    def __init__(
+            self,
+            variant_url:str,
+            sheet_extractors:list[BaseSheetExtractor],
+            page_selector:Selector,
+            builder:SpreadsheetBuilder=None,
+            uploader=None):
         """
         Args:
             page: parsel Selector containing the HTML content.
@@ -28,8 +32,8 @@ class Pipeline:
             builder: Optional SpreadsheetBuilder instance.
             uploader: Optional Uploader instance.
         """
-        self._page = page 
-        self._page_selector = self.get_page_selector(variant_url)
+        self._page_selector = page_selector
+        # self._page_selector = self.get_page_selector(variant_url)
         self.extractor = Extractor(self._page_selector, sheet_extractors)
         self.transformer = Transformer()
         self.image_downloader = ImagesDownloader()
@@ -43,8 +47,6 @@ class Pipeline:
         """
         # 1️⃣ Extract
         raw_data = self.extractor.extract_all()
-        # pprint('raw data :')
-        # pprint(raw_data)
         print('item extracted')
         # 2️⃣ Transform
         transformed_data = self.transformer.transform(raw_data)
@@ -54,19 +56,9 @@ class Pipeline:
         
         # # 4️⃣ add data into spreadsheet
         self.builder.add_raw_data(transformed_data)
-        
 
         return transformed_data
     
-    def get_page_selector(self,variant_url:str) -> Selector :
-        cached_html = load_cache(variant_url)
-        if cached_html:
-            print(f"Using cached page for {variant_url}")
-            return Selector(text=cached_html)
-        self._page.goto(variant_url)
-        html_content = self._page.content()
-        save_cache(variant_url, html_content)
-        return Selector(text=html_content)
     
 
         

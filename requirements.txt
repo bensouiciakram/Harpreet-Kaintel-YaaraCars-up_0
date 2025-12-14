@@ -1,3 +1,4 @@
 camoufox
 parsel
 openpyxl
+pandas 

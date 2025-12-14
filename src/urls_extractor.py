@@ -16,8 +16,8 @@ class CarsUrlsExtractor :
         self.__models_urls = set()
         self.__year = year 
 
-    def extract_models_urls(self):
-        page_selector = self.get_page_selector(
+    async def extract_models_urls(self):
+        page_selector = await self.get_page_selector(
             self.brand_new_car_template.format(
                 country=self.__country,
                 brand=self.__brand
@@ -31,10 +31,10 @@ class CarsUrlsExtractor :
             ).getall()
         }
     
-    def extract_variants_urls(self) -> list[str]:
-        self.extract_models_urls()
+    async def extract_variants_urls(self) -> list[str]:
+        await self.extract_models_urls()
         for url in self.__models_urls :
-            page_selector = self.get_page_selector(url)
+            page_selector = await self.get_page_selector(url)
             new_urls = [
                     f'https://{self.__country}.yallamotor.com' + url 
                     for url in page_selector.xpath(self.__xpath).getall()
@@ -44,19 +44,19 @@ class CarsUrlsExtractor :
             self.__variant_urls.update(new_urls)
 
 
-    def get_variants_urls(self) -> list[str]:
-        self.extract_variants_urls()
+    async def get_variants_urls(self) -> list[str]:
+        await self.extract_variants_urls()
         return list(self.__variant_urls)
     
     def get_models_urls(self) -> list[str]:
         return list(self.__models_urls)
     
-    def get_page_selector(self,url:str) -> Selector :
+    async def get_page_selector(self,url:str) -> Selector :
         cached_html = load_cache(url)
         if cached_html: 
             print(f"Using cached page for {url}")
             return Selector(text=cached_html)
-        self.__page.goto(url)
-        html_content = self.__page.content()
+        await self.__page.goto(url)
+        html_content = await self.__page.content()
         save_cache(url, html_content)
         return Selector(text=html_content)
