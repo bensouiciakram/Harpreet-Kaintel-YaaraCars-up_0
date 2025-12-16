@@ -1,0 +1,2193 @@
+{
+  "brands": {
+    "columns": [
+      {
+        "name": "Master_ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Location",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "Currency",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "Year",
+        "type": "Int64",
+        "maping": [
+          "Description",
+          "Model Year"
+        ]
+      },
+      {
+        "name": "Brand",
+        "type": "string",
+        "maping": [
+          "Description",
+          "Make"
+        ]
+      },
+      {
+        "name": "Brand_Slug",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "Brand_logo",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "Content",
+        "type": "string",
+        "maping": null
+      }
+    ]
+  },
+  "modals": {
+    "columns": [
+      {
+        "name": "Mod_ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Modal",
+        "type": "string",
+        "maping": [
+          "Description",
+          "Model"
+        ]
+      },
+      {
+        "name": "Modal_Slug",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "Brand_ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Body_Type",
+        "type": "string",
+        "maping": [
+          "Description",
+          "Body Style"
+        ]
+      },
+      {
+        "name": "Status_Modal",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name":"Location_meta",
+        "type":"string",
+        "maping":null
+      },
+      {
+        "name": "Year_meta",
+        "type": "Int64",
+        "maping": [
+          "Description",
+          "Model Year"
+        ]
+      },
+      {
+        "name": "Brand_meta",
+        "type": "string",
+        "maping": [
+          "Description",
+          "Make"
+        ]
+      }
+    ]
+  },
+  "variants": {
+    "columns": [
+      {
+        "name":"Location_meta",
+        "type":"string",
+        "maping":null
+      },
+      {
+        "name": "Year_meta",
+        "type": "Int64",
+        "maping": [
+          "Make Model",
+          "Year"
+        ]
+      },
+      {
+        "name": "Brand_meta",
+        "type": "string",
+        "maping": [
+          "Make Model",
+          "Make"
+        ]
+      },
+      {
+        "name": "Var_ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Variant",
+        "type": "string",
+        "maping": [
+          "Make Model",
+          "Variant"
+        ]
+      },
+      {
+        "name": "Ref_Modal",
+        "type": "Int64",
+        "maping": [
+          "Make Model",
+          "Model"
+        ]
+      },
+      {
+        "name": "Variant_Slug",
+        "type": "string",
+        "maping": [
+          "Make Model",
+          "Slug"
+        ]
+      },
+      {
+        "name": "Var_Location",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "Price",
+        "type": "Float64",
+        "maping": [
+          "Make Model",
+          "Price"
+        ]
+      },
+      {
+        "name": "Modal_ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Ref_Brand",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Engine",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "Cylinders",
+        "type": "Int64",
+        "maping": [
+          "Engine & Power",
+          "Cylinders"
+        ]
+      },
+      {
+        "name": "Drive_Type",
+        "type": "string",
+        "maping": [
+          "Engine & Power",
+          "Drive Type"
+        ]
+      },
+      {
+        "name": "Fuel_Tank",
+        "type": "Float64",
+        "maping": [
+          "Engine & Power",
+          "Fuel Tank Capacity (liters)"
+        ]
+      },
+      {
+        "name": "Fuel_Economy",
+        "type": "Float64",
+        "maping": [
+          "Engine & Power",
+          "Fuel Economy (L/100 Km)"
+        ]
+      },
+      {
+        "name": "Fuel_Type",
+        "type": "string",
+        "maping": [
+          "Make Model",
+          "Fuel Type"
+        ]
+      },
+      {
+        "name": "Horsepower",
+        "type": "Float64",
+        "maping": [
+          "Engine & Power",
+          "Horsepower (bhp)"
+        ]
+      },
+      {
+        "name": "Torque",
+        "type": "Float64",
+        "maping": [
+          "Engine & Power",
+          "Torque (Nm)"
+        ]
+      },
+      {
+        "name": "Transmission",
+        "type": "string",
+        "maping": [
+          "Make Model",
+          "Transmission"
+        ]
+      },
+      {
+        "name": "Seating_Capacity",
+        "type": "Int64",
+        "maping": [
+          "Engine & Power",
+          "Seating Capacity"
+        ]
+      },
+      {
+        "name": "Acceleration",
+        "type": "Float64",
+        "maping": [
+          "Engine & Power",
+          "Acceleration 0-100 Km/h (sec)"
+        ]
+      },
+      {
+        "name": "Battery_Size",
+        "type": "Float64",
+        "maping": [
+          "Engine & Power",
+          "Battery Size (kWh)"
+        ]
+      },
+      {
+        "name": "Battery_Range",
+        "type": "Float64",
+        "maping": [
+          "Engine & Power",
+          "Battery Range km"
+        ]
+      },
+      {
+        "name": "Motor",
+        "type": "string",
+        "maping": [
+          "Engine & Power",
+          "Motor"
+        ]
+      },
+      {
+        "name": "Top_Speed",
+        "type": "Float64",
+        "maping": [
+          "Engine & Power",
+          "Top Speed (Km/h)"
+        ]
+      },
+      {
+        "name": "Featured_Image",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "Gallery",
+        "type": "string",
+        "maping": [
+          "Description",
+          "Image_Urls"
+        ]
+      },
+      {
+        "name": "Status",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "Created_At",
+        "type": "string",
+        "maping": null
+      }
+    ]
+  },
+  "features": {
+    "columns": [
+      {
+        "name": "Variant_meta",
+        "type": "string",
+        "maping": [
+          "Make Model",
+          "Variant"
+        ]
+      },
+      {
+        "name": "Location_meta",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Variant_ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "12V_Socket",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "12V Socket - Front Only"
+        ]
+      },
+      {
+        "name": "Active_Steering",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Active Steering"
+        ]
+      },
+      {
+        "name": "Apps",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Apps"
+        ]
+      },
+      {
+        "name": "AUX",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "AUX"
+        ]
+      },
+      {
+        "name": "CD_Player",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "CD Player"
+        ]
+      },
+      {
+        "name": "Drive_Computer",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Drive Computer"
+        ]
+      },
+      {
+        "name": "Rain_Sensing_Wipers",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Rain Sensing Wipers"
+        ]
+      },
+      {
+        "name": "Leather_Covered_Door_Armrest",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Leather Covered Door Armrest"
+        ]
+      },
+      {
+        "name": "Premium_Brand_Audio_System",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Premium Brand Audio System"
+        ]
+      },
+      {
+        "name": "SD_Card",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "SD Card"
+        ]
+      },
+      {
+        "name": "Voice_operated_control",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Voice operated control"
+        ]
+      },
+      {
+        "name": "Lumbar_Support",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Lumbar Support - Manual"
+        ]
+      },
+      {
+        "name": "Leather_gear_shift_lever",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Leather gear shift lever"
+        ]
+      },
+      {
+        "name": "MP3",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "MP3"
+        ]
+      },
+      {
+        "name": "Automatic_AC",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Automatic AC"
+        ]
+      },
+      {
+        "name": "Climate_Control",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Climate Control"
+        ]
+      },
+      {
+        "name": "Electronic_handbrake",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Electronic handbrake"
+        ]
+      },
+      {
+        "name": "Internet_Connectivity",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Internet Connectivity"
+        ]
+      },
+      {
+        "name": "Navigation_System",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Navigation System"
+        ]
+      },
+      {
+        "name": "Radio",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Radio"
+        ]
+      },
+      {
+        "name": "Rear_audio_controls",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Rear audio controls"
+        ]
+      },
+      {
+        "name": "Touchscreen",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Touchscreen"
+        ]
+      },
+      {
+        "name": "Wireless_Headphones",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Wireless Headphones"
+        ]
+      },
+      {
+        "name": "360_Degree_Camera",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "360-Degree Camera"
+        ]
+      },
+      {
+        "name": "Adaptive_Cruise_Control",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Adaptive Cruise Control"
+        ]
+      },
+      {
+        "name": "Audio_Controls_on_Steering_Wheel",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Audio Controls on Steering Wheel"
+        ]
+      },
+      {
+        "name": "Bluetooth",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Bluetooth"
+        ]
+      },
+      {
+        "name": "Cruise_Control",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Cruise Control"
+        ]
+      },
+      {
+        "name": "HDMI",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "HDMI"
+        ]
+      },
+      {
+        "name": "Keyless_Entry",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Keyless Entry"
+        ]
+      },
+      {
+        "name": "Push_Button_Start",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Push Button Start"
+        ]
+      },
+      {
+        "name": "Rear_AC_Controls",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Rear AC Controls"
+        ]
+      },
+      {
+        "name": "Touchpad",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Touchpad"
+        ]
+      },
+      {
+        "name": "Touchscreen_Size",
+        "type": "Float64",
+        "maping": [
+          "Comfort Features",
+          "Touchscreen Size"
+        ]
+      },
+      {
+        "name": "Temperature_Display",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Temperature Display"
+        ]
+      },
+      {
+        "name": "Air_COnditioning",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Air COnditioning"
+        ]
+      },
+      {
+        "name": "Ashtray",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Ashtray"
+        ]
+      },
+      {
+        "name": "Auto_Dimming_Mirror",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Auto Dimming Mirror"
+        ]
+      },
+      {
+        "name": "Cassette_player",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Cassette player"
+        ]
+      },
+      {
+        "name": "Cigar_Lighter",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Cigar Lighter"
+        ]
+      },
+      {
+        "name": "Climate_Controlled_Seats",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Climate Controlled Seats"
+        ]
+      },
+      {
+        "name": "Live_Traffic_Information",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Live Traffic Information"
+        ]
+      },
+      {
+        "name": "Microphone",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Microphone"
+        ]
+      },
+      {
+        "name": "Night_Vision",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Night Vision"
+        ]
+      },
+      {
+        "name": "Number_of_Speakers",
+        "type": "Int64",
+        "maping": [
+          "Comfort Features",
+          "Number of Speakers"
+        ]
+      },
+      {
+        "name": "Remote_Start",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Remote Start"
+        ]
+      },
+      {
+        "name": "Remote_Windows_Down",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Remote Windows Down"
+        ]
+      },
+      {
+        "name": "Speed_Sensitive_Windshield_Wipers",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Speed Sensitive Windshield Wipers"
+        ]
+      },
+      {
+        "name": "USB",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "USB"
+        ]
+      },
+      {
+        "name": "Ambient_Lighting",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Ambient Lighting"
+        ]
+      },
+      {
+        "name": "Cool_box",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Cool box"
+        ]
+      },
+      {
+        "name": "Cruise_Control_Switch_on_Steering",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Cruise Control Switch on Steering"
+        ]
+      },
+      {
+        "name": "Odometer",
+        "type": "Float64",
+        "maping": [
+          "Comfort Features",
+          "Odometer"
+        ]
+      },
+      {
+        "name": "Manual_AC",
+        "type": "string",
+        "maping": [
+          "Comfort Features",
+          "Manual AC"
+        ]
+      }
+    ]
+  },
+  "measurement": {
+    "columns": [
+      {
+        "name": "Variant_meta",
+        "type": "string",
+        "maping": [
+          "Make Model",
+          "Variant"
+        ]
+      },
+      {
+        "name": "Location_meta",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Variant_ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Length",
+        "type": "Float64",
+        "maping": [
+          "Measurements",
+          "Length (meters)"
+        ]
+      },
+      {
+        "name": "Width",
+        "type": "Float64",
+        "maping": [
+          "Measurements",
+          "Width (meters)"
+        ]
+      },
+      {
+        "name": "Height",
+        "type": "Float64",
+        "maping": [
+          "Measurements",
+          "Height (meters)"
+        ]
+      },
+      {
+        "name": "Wheelbase",
+        "type": "Float64",
+        "maping": [
+          "Measurements",
+          "Wheelbase (meters)"
+        ]
+      },
+      {
+        "name": "Trunk_Capacity",
+        "type": "Float64",
+        "maping": [
+          "Measurements",
+          "Trunk Capacity (liters)"
+        ]
+      }
+    ]
+  },
+  "safety": {
+    "columns": [
+      {
+        "name": "Variant_meta",
+        "type": "string",
+        "maping": [
+          "Make Model",
+          "Variant"
+        ]
+      },
+      {
+        "name": "Location_meta",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Variant_ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Camera_360",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "360 Camera"
+        ]
+      },
+      {
+        "name": "Airbags",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Airbags"
+        ]
+      },
+      {
+        "name": "BA",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "BA (Brake Assist)"
+        ]
+      },
+      {
+        "name": "Collision_Detection",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Collision Detection"
+        ]
+      },
+      {
+        "name": "Fire_Extinguisher",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Fire Extinguisher"
+        ]
+      },
+      {
+        "name": "Immobilizer",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Immobilizer"
+        ]
+      },
+      {
+        "name": "Parking_Sensors",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Parking Sensors - Front and Rear"
+        ]
+      },
+      {
+        "name": "Rear_Camera",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Rear Camera"
+        ]
+      },
+      {
+        "name": "Anti_theft_alarm",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Anti theft alarm"
+        ]
+      },
+      {
+        "name": "Hill_Assist",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Hill Assist"
+        ]
+      },
+      {
+        "name": "Parallel_Parking_Assist",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Parallel Parking Assist"
+        ]
+      },
+      {
+        "name": "Attention_Assist",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Attention Assist"
+        ]
+      },
+      {
+        "name": "AABS",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Advanced Air Bags System (AABS)"
+        ]
+      },
+      {
+        "name": "Seatbelts",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Seatbelts - Front Only"
+        ]
+      },
+      {
+        "name": "Moving_object_detection_system",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Moving object detection system"
+        ]
+      },
+      {
+        "name": "Speed_Limiter",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Speed Limiter"
+        ]
+      },
+      {
+        "name": "Tire_Pressure_Monitoring_Display",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Tire Pressure Monitoring Display"
+        ]
+      },
+      {
+        "name": "Vehicle_Stability_Control",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Vehicle Stability Control (VSC)"
+        ]
+      },
+      {
+        "name": "ABS",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "ABS (Anti-lock Brake System)"
+        ]
+      },
+      {
+        "name": "Auto_Door_Lock",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Auto Door Lock"
+        ]
+      },
+      {
+        "name": "Differential_Lock",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Differential Lock"
+        ]
+      },
+      {
+        "name": "Blind_Spot_Warning",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Blind Spot Warning"
+        ]
+      },
+      {
+        "name": "EBD",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "EBD (Electronic Brakeforce Distribution)"
+        ]
+      },
+      {
+        "name": "Gas_Shock_Absorber",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Gas Shock Absorber"
+        ]
+      },
+      {
+        "name": "ISO_Fix_Child_Seat_Anchors",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "ISO Fix Child Seat Anchors"
+        ]
+      },
+      {
+        "name": "Lane_Departure_Warning",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Lane Departure Warning"
+        ]
+      },
+      {
+        "name": "Pedestrian_airbag",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Pedestrian airbag"
+        ]
+      },
+      {
+        "name": "Rollover_stability_control",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Rollover stability control"
+        ]
+      },
+      {
+        "name": "Spare_Wheel",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Spare Wheel"
+        ]
+      },
+      {
+        "name": "Surround_Camera",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Surround Camera"
+        ]
+      },
+      {
+        "name": "Traction_Control",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Traction Control"
+        ]
+      },
+      {
+        "name": "Auto_Handbrake_Release_Function",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Auto Handbrake Release Function"
+        ]
+      },
+      {
+        "name": "Security_System",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Security System"
+        ]
+      },
+      {
+        "name": "Tire_Repair_Kit",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Tire Repair Kit"
+        ]
+      },
+      {
+        "name": "Trailer_hitch_with_cover",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Trailer hitch with cover"
+        ]
+      },
+      {
+        "name": "Variable_Cylinder_Management",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Variable Cylinder Management (VCM)"
+        ]
+      },
+      {
+        "name": "Adaptive_Brake_Lights",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Adaptive Brake Lights"
+        ]
+      },
+      {
+        "name": "Toolkit",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Toolkit"
+        ]
+      },
+      {
+        "name": "Acceleration_Skid_Control",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Acceleration Skid Control"
+        ]
+      },
+      {
+        "name": "Active_Bonnet",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Active Bonnet"
+        ]
+      },
+      {
+        "name": "Active_Headrests",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Active Headrests"
+        ]
+      },
+      {
+        "name": "Active_Understeer_Control",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Active Understeer Control (AUC)"
+        ]
+      },
+      {
+        "name": "Adaptive_Suspension_Package",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Adaptive Suspension Package"
+        ]
+      },
+      {
+        "name": "Anti_theft_wheel_bolts",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Anti theft wheel bolts"
+        ]
+      },
+      {
+        "name": "Cargo_area_tie_down_anchors",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Cargo area tie down anchors"
+        ]
+      },
+      {
+        "name": "Crosswind_Assist",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Crosswind Assist"
+        ]
+      },
+      {
+        "name": "Door_Edge_Protector",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Door Edge Protector"
+        ]
+      },
+      {
+        "name": "Dynamic_Damper_Control",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Dynamic Damper Control"
+        ]
+      },
+      {
+        "name": "Dynamic_Stability_Control",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Dynamic Stability Control"
+        ]
+      },
+      {
+        "name": "First_Aid_Kit",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "First Aid Kit"
+        ]
+      },
+      {
+        "name": "Knee_Bag",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Knee Bag - Driver"
+        ]
+      },
+      {
+        "name": "Mudguard",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Mudguard - Front"
+        ]
+      },
+      {
+        "name": "Torsen_Limited_Slip_Differential",
+        "type": "string",
+        "maping": [
+          "Safety Features",
+          "Torsen Limited Slip Differential"
+        ]
+      }
+    ]
+  },
+  "exterior": {
+    "columns": [
+      {
+        "name": "Variant_meta",
+        "type": "string",
+        "maping": [
+          "Make Model",
+          "Variant"
+        ]
+      },
+      {
+        "name": "Location_meta",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Variant_ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Acoustic_Hood",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Acoustic Hood"
+        ]
+      },
+      {
+        "name": "Adaptive_Headlights",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Adaptive Headlights"
+        ]
+      },
+      {
+        "name": "Automatic_Headlight_Range_Control",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Automatic Headlight Range Control"
+        ]
+      },
+      {
+        "name": "High_Mount_Stop_Lamp",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "High Mount Stop Lamp"
+        ]
+      },
+      {
+        "name": "Lock_and_Unlock_Sensing_Auto_Electric_Folding_Mirror",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Lock and Unlock Sensing Auto Electric Folding Mirror"
+        ]
+      },
+      {
+        "name": "Roof_Spoiler",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Roof Spoiler"
+        ]
+      },
+      {
+        "name": "Illuminated_Door_handles",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Illuminated Door handles"
+        ]
+      },
+      {
+        "name": "Power_Tailgate",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Power Tailgate"
+        ]
+      },
+      {
+        "name": "Puddle_Lamp",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Puddle Lamp"
+        ]
+      },
+      {
+        "name": "LED_Taillights",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "LED Taillights"
+        ]
+      },
+      {
+        "name": "Auto_Headlamps",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Auto Headlamps"
+        ]
+      },
+      {
+        "name": "Headlight_Washers",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Headlight Washers"
+        ]
+      },
+      {
+        "name": "Electric_Opening_and_Closing_of_Luggage_Door",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Electric Opening and Closing of Luggage Door"
+        ]
+      },
+      {
+        "name": "LED_Headlights",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "LED Headlights"
+        ]
+      },
+      {
+        "name": "Off_Road_tyres",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Off-Road tyres"
+        ]
+      },
+      {
+        "name": "Wheels",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Wheels - Alloy"
+        ]
+      },
+      {
+        "name": "Chrome_Exhaust_Pipes",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Chrome Exhaust Pipes"
+        ]
+      },
+      {
+        "name": "LED_foglights",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "LED foglights"
+        ]
+      },
+      {
+        "name": "Off_Road_Dampers",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Off-Road Dampers"
+        ]
+      },
+      {
+        "name": "Rear_Wiper",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Rear Wiper"
+        ]
+      },
+      {
+        "name": "Power_Windows",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Power Windows - Front and Rear"
+        ]
+      },
+      {
+        "name": "Chrome_Door_Handles",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Chrome Door Handles"
+        ]
+      },
+      {
+        "name": "Chrome_Plated_Radiator_Grille",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Chrome Plated Radiator Grille"
+        ]
+      },
+      {
+        "name": "Chrome_Door_Mirrors",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Chrome Door Mirrors"
+        ]
+      },
+      {
+        "name": "Door_Mirrors_with_Side_Turn_Signal",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Door Mirrors with Side Turn Signal"
+        ]
+      },
+      {
+        "name": "Rear_Window_Defogger",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Rear Window Defogger"
+        ]
+      },
+      {
+        "name": "Daytime_Running_Lights",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Daytime Running Lights - LED"
+        ]
+      },
+      {
+        "name": "Electric_Door_Mirrors",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Electric Door Mirrors"
+        ]
+      },
+      {
+        "name": "Acoustic_Front_Windshield",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Acoustic Front Windshield"
+        ]
+      },
+      {
+        "name": "Alloy_Pedals",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Alloy Pedals"
+        ]
+      },
+      {
+        "name": "Aluminum_Wheels",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Aluminum Wheels"
+        ]
+      },
+      {
+        "name": "Body_Colored_Grille",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Body Colored Grille"
+        ]
+      },
+      {
+        "name": "Door_Reflectors",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Door Reflectors"
+        ]
+      },
+      {
+        "name": "Dual_Exhaust_Tip",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Dual Exhaust Tip"
+        ]
+      },
+      {
+        "name": "Fog_Lamp",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Fog Lamp - Front and Rear"
+        ]
+      },
+      {
+        "name": "Front_Bumper___Normal",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Front Bumper - Normal"
+        ]
+      },
+      {
+        "name": "HID_Headlights",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "HID Headlights"
+        ]
+      },
+      {
+        "name": "Rear_Brakes",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Rear Brakes - Ventilated Discs"
+        ]
+      },
+      {
+        "name": "Roof_Rails",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Roof Rails"
+        ]
+      },
+      {
+        "name": "Running_Board",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Running Board - Standard"
+        ]
+      },
+      {
+        "name": "Sonar",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Sonar"
+        ]
+      },
+      {
+        "name": "Sports_Exhaust_System",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Sports Exhaust System"
+        ]
+      },
+      {
+        "name": "Tailgate_with_Hatch",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Tailgate with Hatch"
+        ]
+      },
+      {
+        "name": "Towing_Hook",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Towing Hook"
+        ]
+      },
+      {
+        "name": "Wheel_Size",
+        "type": "Float64",
+        "maping": [
+          "Exterior Features",
+          "Wheel Size"
+        ]
+      },
+      {
+        "name": "Bumper_Side_Step",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Bumper Side Step"
+        ]
+      },
+      {
+        "name": "Frameless_Doors",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Frameless Doors"
+        ]
+      },
+      {
+        "name": "Front_Brakes",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Front Brakes - Ventilated Discs"
+        ]
+      },
+      {
+        "name": "Wind_Blocker",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Wind Blocker"
+        ]
+      },
+      {
+        "name": "Fog_Lamps",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Fog Lamp - Front and Rear"
+        ]
+      },
+      {
+        "name": "Halogen_Headlamps",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Halogen Headlamps"
+        ]
+      },
+      {
+        "name": "Manual_Headlamps",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Manual Headlamps"
+        ]
+      },
+      {
+        "name": "Car_Wheels",
+        "type": "string",
+        "maping": [
+          "Exterior Features",
+          "Wheels - Steel"
+        ]
+      }
+    ]
+  },
+  "interior": {
+    "columns": [
+      {
+        "name": "Variant_meta",
+        "type": "string",
+        "maping": [
+          "Make Model",
+          "Variant"
+        ]
+      },
+      {
+        "name": "Location_meta",
+        "type": "string",
+        "maping": null
+      },
+      {
+        "name": "ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Variant_ID",
+        "type": "Int64",
+        "maping": null
+      },
+      {
+        "name": "Center_Arm_Rest",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Center Arm Rest"
+        ]
+      },
+      {
+        "name": "Cargo_area_light",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Cargo area light"
+        ]
+      },
+      {
+        "name": "Foldable_Rear_Seats",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Foldable Rear Seats with 60:40 Split"
+        ]
+      },
+      {
+        "name": "Front_Seat_Armrest",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Front Seat Armrest"
+        ]
+      },
+      {
+        "name": "Power_Outlets",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Power Outlets"
+        ]
+      },
+      {
+        "name": "Seat_Adjustments",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Seat Adjustment - Automatic"
+        ]
+      },
+      {
+        "name": "Footwell_Lights",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Footwell Lights"
+        ]
+      },
+      {
+        "name": "Scuff_Plate",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Scuff Plate"
+        ]
+      },
+      {
+        "name": "Seat_Memory",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Seat Memory"
+        ]
+      },
+      {
+        "name": "Vanity_Mirror",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Vanity Mirror"
+        ]
+      },
+      {
+        "name": "Heated_Cooled_Seats",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Heated/Cooled Seats"
+        ]
+      },
+      {
+        "name": "Intelligent_Key",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Intelligent Key"
+        ]
+      },
+      {
+        "name": "Illuminated_Door_Sills",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Illuminated Door Sills"
+        ]
+      },
+      {
+        "name": "Map_Reading_Lamps",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Map Reading Lamps"
+        ]
+      },
+      {
+        "name": "Digital_Clock",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Digital Clock"
+        ]
+      },
+      {
+        "name": "Leather_Steering_Wheel",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Leather Steering Wheel"
+        ]
+      },
+      {
+        "name": "Panoramic_Glass_Roof",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Panoramic Glass Roof"
+        ]
+      },
+      {
+        "name": "Rear_Cupholders",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Rear Cupholders"
+        ]
+      },
+      {
+        "name": "Rear_Pockets",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Rear Pockets"
+        ]
+      },
+      {
+        "name": "Speed_Sensitive_Power_Steering",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Speed Sensitive Power Steering"
+        ]
+      },
+      {
+        "name": "Trip_Computer",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Trip Computer"
+        ]
+      },
+      {
+        "name": "Welcome_Light",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Welcome Light"
+        ]
+      },
+      {
+        "name": "Cupholders",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Cupholders"
+        ]
+      },
+      {
+        "name": "Leather_Seats",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Leather Seats"
+        ]
+      },
+      {
+        "name": "Multi_Information_Display",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Multi Information Display"
+        ]
+      },
+      {
+        "name": "Power_Steering",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Power Steering"
+        ]
+      },
+      {
+        "name": "Rear_Lcd_screens",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Rear Lcd screens"
+        ]
+      },
+      {
+        "name": "Seats",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Seats - Comfort"
+        ]
+      },
+      {
+        "name": "Steering_Tilt_Adjustment",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Steering Tilt Adjustment"
+        ]
+      },
+      {
+        "name": "Trip_Meter",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Trip Meter"
+        ]
+      },
+      {
+        "name": "Bonnet_Light",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Bonnet Light"
+        ]
+      },
+      {
+        "name": "Alcantara_seats",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Alcantara seats"
+        ]
+      },
+      {
+        "name": "Center_Console_Box",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Center Console Box"
+        ]
+      },
+      {
+        "name": "Central_Locking",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Central Locking"
+        ]
+      },
+      {
+        "name": "Compass",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Compass"
+        ]
+      },
+      {
+        "name": "Conversation_Mirror_with_Sunglasses_Holder",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Conversation Mirror with Sunglasses Holder"
+        ]
+      },
+      {
+        "name": "DVD",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "DVD"
+        ]
+      },
+      {
+        "name": "Electric_anti_dazzling_room_mirror",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Electric anti-dazzling room mirror"
+        ]
+      },
+      {
+        "name": "Leather_instrument_panel",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Leather instrument panel"
+        ]
+      },
+      {
+        "name": "Multi_Information_Display_Size",
+        "type": "Float64",
+        "maping": [
+          "Interior Features",
+          "Multi Information Display Size"
+        ]
+      },
+      {
+        "name": "Rear_AC_Vents",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Rear AC Vents"
+        ]
+      },
+      {
+        "name": "Rear_Entertainment_System",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Rear Entertainment System"
+        ]
+      },
+      {
+        "name": "Silver_Trim",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Silver Trim"
+        ]
+      },
+      {
+        "name": "Wood_Trim",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Wood Trim"
+        ]
+      },
+      {
+        "name": "Electric_Curtain",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Electric Curtain - Rear"
+        ]
+      },
+      {
+        "name": "Electric_Sunroof",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Electric Sunroof"
+        ]
+      },
+      {
+        "name": "Glove_Box_Cooling",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Glove Box Cooling"
+        ]
+      },
+      {
+        "name": "Rear_Blinds",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Rear Blinds"
+        ]
+      },
+      {
+        "name": "Fabric_Seats",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Fabric Seats"
+        ]
+      },
+      {
+        "name": "Seat_Adjustment",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Seat Adjustment - Manual"
+        ]
+      },
+      {
+        "name": "Urethane_Steering",
+        "type": "string",
+        "maping": [
+          "Interior Features",
+          "Urethane Steering"
+        ]
+      }
+    ]
+  }
+}
