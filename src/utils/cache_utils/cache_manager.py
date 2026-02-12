@@ -1,7 +1,7 @@
 import hashlib
 from pathlib import Path
 
-CACHE_DIR = Path(__file__).parents[2].joinpath('cache')
+CACHE_DIR = Path(__file__).parents[3].joinpath('cache')
 CACHE_DIR.mkdir(exist_ok=True)
 
 def _url_to_filename(url: str) -> Path:

@@ -1,0 +1,1102 @@
+{
+  "brands": {
+    "columns": [
+      {
+        "name": "Master_ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Location",
+        "type": "string"
+      },
+      {
+        "name": "Currency",
+        "type": "string"
+      },
+      {
+        "name": "Year",
+        "type": "Int64"
+      },
+      {
+        "name": "Brand",
+        "type": "string"
+      },
+      {
+        "name": "Brand_Slug",
+        "type": "string"
+      },
+      {
+        "name": "Brand_logo",
+        "type": "string"
+      },
+      {
+        "name": "Content",
+        "type": "string"
+      }
+    ]
+  },
+  "modals": {
+    "columns": [
+      {
+        "name": "Mod_ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Modal",
+        "type": "string"
+      },
+      {
+        "name": "Modal_Slug",
+        "type": "string"
+      },
+      {
+        "name": "Brand_ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Body_Type",
+        "type": "string"
+      },
+      {
+        "name": "Status_Modal",
+        "type": "string"
+      }
+    ]
+  },
+  "variants": {
+    "columns": [
+      {
+        "name": "Var_ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Variant",
+        "type": "string"
+      },
+      {
+        "name": "Ref_Modal",
+        "type": "Int64"
+      },
+      {
+        "name": "Variant_Slug",
+        "type": "string"
+      },
+      {
+        "name": "Var_Location",
+        "type": "string"
+      },
+      {
+        "name": "Price",
+        "type": "Float64"
+      },
+      {
+        "name": "Modal_ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Ref_Brand",
+        "type": "Int64"
+      },
+      {
+        "name": "Engine",
+        "type": "string"
+      },
+      {
+        "name": "Cylinders",
+        "type": "Int64"
+      },
+      {
+        "name": "Drive_Type",
+        "type": "string"
+      },
+      {
+        "name": "Fuel_Tank",
+        "type": "Float64"
+      },
+      {
+        "name": "Fuel_Economy",
+        "type": "Float64"
+      },
+      {
+        "name": "Fuel_Type",
+        "type": "string"
+      },
+      {
+        "name": "Horsepower",
+        "type": "Float64"
+      },
+      {
+        "name": "Torque",
+        "type": "Float64"
+      },
+      {
+        "name": "Transmission",
+        "type": "string"
+      },
+      {
+        "name": "Seating_Capacity",
+        "type": "Int64"
+      },
+      {
+        "name": "Acceleration",
+        "type": "Float64"
+      },
+      {
+        "name": "Battery_Size",
+        "type": "Float64"
+      },
+      {
+        "name": "Battery_Range",
+        "type": "Float64"
+      },
+      {
+        "name": "Motor",
+        "type": "string"
+      },
+      {
+        "name": "Top_Speed",
+        "type": "Float64"
+      },
+      {
+        "name": "Featured_Image",
+        "type": "string"
+      },
+      {
+        "name": "Gallery",
+        "type": "string"
+      },
+      {
+        "name": "Status",
+        "type": "string"
+      },
+      {
+        "name": "Created_At",
+        "type": "string"
+      }
+    ]
+  },
+  "features": {
+    "columns": [
+      {
+        "name": "ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Variant_ID",
+        "type": "Int64"
+      },
+      {
+        "name": "12V_Socket",
+        "type": "string"
+      },
+      {
+        "name": "Active_Steering",
+        "type": "string"
+      },
+      {
+        "name": "Apps",
+        "type": "string"
+      },
+      {
+        "name": "AUX",
+        "type": "string"
+      },
+      {
+        "name": "CD_Player",
+        "type": "string"
+      },
+      {
+        "name": "Drive_Computer",
+        "type": "string"
+      },
+      {
+        "name": "Rain_Sensing_Wipers",
+        "type": "string"
+      },
+      {
+        "name": "Leather_Covered_Door_Armrest",
+        "type": "string"
+      },
+      {
+        "name": "Premium_Brand_Audio_System",
+        "type": "string"
+      },
+      {
+        "name": "SD_Card",
+        "type": "string"
+      },
+      {
+        "name": "Voice_operated_control",
+        "type": "string"
+      },
+      {
+        "name": "Lumbar_Support",
+        "type": "string"
+      },
+      {
+        "name": "Leather_gear_shift_lever",
+        "type": "string"
+      },
+      {
+        "name": "MP3",
+        "type": "string"
+      },
+      {
+        "name": "Automatic_AC",
+        "type": "string"
+      },
+      {
+        "name": "Climate_Control",
+        "type": "string"
+      },
+      {
+        "name": "Electronic_handbrake",
+        "type": "string"
+      },
+      {
+        "name": "Internet_Connectivity",
+        "type": "string"
+      },
+      {
+        "name": "Navigation_System",
+        "type": "string"
+      },
+      {
+        "name": "Radio",
+        "type": "string"
+      },
+      {
+        "name": "Rear_audio_controls",
+        "type": "string"
+      },
+      {
+        "name": "Touchscreen",
+        "type": "string"
+      },
+      {
+        "name": "Wireless_Headphones",
+        "type": "string"
+      },
+      {
+        "name": "360_Degree_Camera",
+        "type": "string"
+      },
+      {
+        "name": "Adaptive_Cruise_Control",
+        "type": "string"
+      },
+      {
+        "name": "Audio_Controls_on_Steering_Wheel",
+        "type": "string"
+      },
+      {
+        "name": "Bluetooth",
+        "type": "string"
+      },
+      {
+        "name": "Cruise_Control",
+        "type": "string"
+      },
+      {
+        "name": "HDMI",
+        "type": "string"
+      },
+      {
+        "name": "Keyless_Entry",
+        "type": "string"
+      },
+      {
+        "name": "Push_Button_Start",
+        "type": "string"
+      },
+      {
+        "name": "Rear_AC_Controls",
+        "type": "string"
+      },
+      {
+        "name": "Touchpad",
+        "type": "string"
+      },
+      {
+        "name": "Touchscreen_Size",
+        "type": "Float64"
+      },
+      {
+        "name": "Temperature_Display",
+        "type": "string"
+      },
+      {
+        "name": "Air_COnditioning",
+        "type": "string"
+      },
+      {
+        "name": "Ashtray",
+        "type": "string"
+      },
+      {
+        "name": "Auto_Dimming_Mirror",
+        "type": "string"
+      },
+      {
+        "name": "Cassette_player",
+        "type": "string"
+      },
+      {
+        "name": "Cigar_Lighter",
+        "type": "string"
+      },
+      {
+        "name": "Climate_Controlled_Seats",
+        "type": "string"
+      },
+      {
+        "name": "Live_Traffic_Information",
+        "type": "string"
+      },
+      {
+        "name": "Microphone",
+        "type": "string"
+      },
+      {
+        "name": "Night_Vision",
+        "type": "string"
+      },
+      {
+        "name": "Number_of_Speakers",
+        "type": "Int64"
+      },
+      {
+        "name": "Remote_Start",
+        "type": "string"
+      },
+      {
+        "name": "Remote_Windows_Down",
+        "type": "string"
+      },
+      {
+        "name": "Speed_Sensitive_Windshield_Wipers",
+        "type": "string"
+      },
+      {
+        "name": "USB",
+        "type": "string"
+      },
+      {
+        "name": "Ambient_Lighting",
+        "type": "string"
+      },
+      {
+        "name": "Cool_box",
+        "type": "string"
+      },
+      {
+        "name": "Cruise_Control_Switch_on_Steering",
+        "type": "string"
+      },
+      {
+        "name": "Odometer",
+        "type": "Float64"
+      },
+      {
+        "name": "Manual_AC",
+        "type": "string"
+      }
+    ]
+  },
+  "measurement": {
+    "columns": [
+      {
+        "name": "ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Variant_ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Length",
+        "type": "Float64"
+      },
+      {
+        "name": "Width",
+        "type": "Float64"
+      },
+      {
+        "name": "Height",
+        "type": "Float64"
+      },
+      {
+        "name": "Wheelbase",
+        "type": "Float64"
+      },
+      {
+        "name": "Trunk_Capacity",
+        "type": "Float64"
+      }
+    ]
+  },
+  "safety": {
+    "columns": [
+      {
+        "name": "ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Variant_ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Camera_360",
+        "type": "string"
+      },
+      {
+        "name": "Airbags",
+        "type": "string"
+      },
+      {
+        "name": "BA",
+        "type": "string"
+      },
+      {
+        "name": "Collision_Detection",
+        "type": "string"
+      },
+      {
+        "name": "Fire_Extinguisher",
+        "type": "string"
+      },
+      {
+        "name": "Immobilizer",
+        "type": "string"
+      },
+      {
+        "name": "Parking_Sensors",
+        "type": "string"
+      },
+      {
+        "name": "Rear_Camera",
+        "type": "string"
+      },
+      {
+        "name": "Anti_theft_alarm",
+        "type": "string"
+      },
+      {
+        "name": "Hill_Assist",
+        "type": "string"
+      },
+      {
+        "name": "Parallel_Parking_Assist",
+        "type": "string"
+      },
+      {
+        "name": "Attention_Assist",
+        "type": "string"
+      },
+      {
+        "name": "AABS",
+        "type": "string"
+      },
+      {
+        "name": "Seatbelts",
+        "type": "string"
+      },
+      {
+        "name": "Moving_object_detection_system",
+        "type": "string"
+      },
+      {
+        "name": "Speed_Limiter",
+        "type": "string"
+      },
+      {
+        "name": "Tire_Pressure_Monitoring_Display",
+        "type": "string"
+      },
+      {
+        "name": "Vehicle_Stability_Control",
+        "type": "string"
+      },
+      {
+        "name": "ABS",
+        "type": "string"
+      },
+      {
+        "name": "Auto_Door_Lock",
+        "type": "string"
+      },
+      {
+        "name": "Differential_Lock",
+        "type": "string"
+      },
+      {
+        "name": "Blind_Spot_Warning",
+        "type": "string"
+      },
+      {
+        "name": "EBD",
+        "type": "string"
+      },
+      {
+        "name": "Gas_Shock_Absorber",
+        "type": "string"
+      },
+      {
+        "name": "ISO_Fix_Child_Seat_Anchors",
+        "type": "string"
+      },
+      {
+        "name": "Lane_Departure_Warning",
+        "type": "string"
+      },
+      {
+        "name": "Pedestrian_airbag",
+        "type": "string"
+      },
+      {
+        "name": "Rollover_stability_control",
+        "type": "string"
+      },
+      {
+        "name": "Spare_Wheel",
+        "type": "string"
+      },
+      {
+        "name": "Surround_Camera",
+        "type": "string"
+      },
+      {
+        "name": "Traction_Control",
+        "type": "string"
+      },
+      {
+        "name": "Auto_Handbrake_Release_Function",
+        "type": "string"
+      },
+      {
+        "name": "Security_System",
+        "type": "string"
+      },
+      {
+        "name": "Tire_Repair_Kit",
+        "type": "string"
+      },
+      {
+        "name": "Trailer_hitch_with_cover",
+        "type": "string"
+      },
+      {
+        "name": "Variable_Cylinder_Management",
+        "type": "string"
+      },
+      {
+        "name": "Adaptive_Brake_Lights",
+        "type": "string"
+      },
+      {
+        "name": "Toolkit",
+        "type": "string"
+      },
+      {
+        "name": "Acceleration_Skid_Control",
+        "type": "string"
+      },
+      {
+        "name": "Active_Bonnet",
+        "type": "string"
+      },
+      {
+        "name": "Active_Headrests",
+        "type": "string"
+      },
+      {
+        "name": "Active_Understeer_Control",
+        "type": "string"
+      },
+      {
+        "name": "Adaptive_Suspension_Package",
+        "type": "string"
+      },
+      {
+        "name": "Anti_theft_wheel_bolts",
+        "type": "string"
+      },
+      {
+        "name": "Cargo_area_tie_down_anchors",
+        "type": "string"
+      },
+      {
+        "name": "Crosswind_Assist",
+        "type": "string"
+      },
+      {
+        "name": "Door_Edge_Protector",
+        "type": "string"
+      },
+      {
+        "name": "Dynamic_Damper_Control",
+        "type": "string"
+      },
+      {
+        "name": "Dynamic_Stability_Control",
+        "type": "string"
+      },
+      {
+        "name": "First_Aid_Kit",
+        "type": "string"
+      },
+      {
+        "name": "Knee_Bag",
+        "type": "string"
+      },
+      {
+        "name": "Mudguard",
+        "type": "string"
+      },
+      {
+        "name": "Torsen_Limited_Slip_Differential",
+        "type": "string"
+      }
+    ]
+  },
+  "exterior": {
+    "columns": [
+      {
+        "name": "ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Variant_ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Acoustic_Hood",
+        "type": "string"
+      },
+      {
+        "name": "Adaptive_Headlights",
+        "type": "string"
+      },
+      {
+        "name": "Automatic_Headlight_Range_Control",
+        "type": "string"
+      },
+      {
+        "name": "High_Mount_Stop_Lamp",
+        "type": "string"
+      },
+      {
+        "name": "Lock_and_Unlock_Sensing_Auto_Electric_Folding_Mirror",
+        "type": "string"
+      },
+      {
+        "name": "Roof_Spoiler",
+        "type": "string"
+      },
+      {
+        "name": "Illuminated_Door_handles",
+        "type": "string"
+      },
+      {
+        "name": "Power_Tailgate",
+        "type": "string"
+      },
+      {
+        "name": "Puddle_Lamp",
+        "type": "string"
+      },
+      {
+        "name": "LED_Taillights",
+        "type": "string"
+      },
+      {
+        "name": "Auto_Headlamps",
+        "type": "string"
+      },
+      {
+        "name": "Headlight_Washers",
+        "type": "string"
+      },
+      {
+        "name": "Electric_Opening_and_Closing_of_Luggage_Door",
+        "type": "string"
+      },
+      {
+        "name": "LED_Headlights",
+        "type": "string"
+      },
+      {
+        "name": "Off_Road_tyres",
+        "type": "string"
+      },
+      {
+        "name": "Wheels",
+        "type": "string"
+      },
+      {
+        "name": "Chrome_Exhaust_Pipes",
+        "type": "string"
+      },
+      {
+        "name": "LED_foglights",
+        "type": "string"
+      },
+      {
+        "name": "Off_Road_Dampers",
+        "type": "string"
+      },
+      {
+        "name": "Rear_Wiper",
+        "type": "string"
+      },
+      {
+        "name": "Power_Windows",
+        "type": "string"
+      },
+      {
+        "name": "Chrome_Door_Handles",
+        "type": "string"
+      },
+      {
+        "name": "Chrome_Plated_Radiator_Grille",
+        "type": "string"
+      },
+      {
+        "name": "Chrome_Door_Mirrors",
+        "type": "string"
+      },
+      {
+        "name": "Door_Mirrors_with_Side_Turn_Signal",
+        "type": "string"
+      },
+      {
+        "name": "Rear_Window_Defogger",
+        "type": "string"
+      },
+      {
+        "name": "Daytime_Running_Lights",
+        "type": "string"
+      },
+      {
+        "name": "Electric_Door_Mirrors",
+        "type": "string"
+      },
+      {
+        "name": "Acoustic_Front_Windshield",
+        "type": "string"
+      },
+      {
+        "name": "Alloy_Pedals",
+        "type": "string"
+      },
+      {
+        "name": "Aluminum_Wheels",
+        "type": "string"
+      },
+      {
+        "name": "Body_Colored_Grille",
+        "type": "string"
+      },
+      {
+        "name": "Door_Reflectors",
+        "type": "string"
+      },
+      {
+        "name": "Dual_Exhaust_Tip",
+        "type": "string"
+      },
+      {
+        "name": "Fog_Lamp",
+        "type": "string"
+      },
+      {
+        "name": "Front_Bumper___Normal",
+        "type": "string"
+      },
+      {
+        "name": "HID_Headlights",
+        "type": "string"
+      },
+      {
+        "name": "Rear_Brakes",
+        "type": "string"
+      },
+      {
+        "name": "Roof_Rails",
+        "type": "string"
+      },
+      {
+        "name": "Running_Board",
+        "type": "string"
+      },
+      {
+        "name": "Sonar",
+        "type": "string"
+      },
+      {
+        "name": "Sports_Exhaust_System",
+        "type": "string"
+      },
+      {
+        "name": "Tailgate_with_Hatch",
+        "type": "string"
+      },
+      {
+        "name": "Towing_Hook",
+        "type": "string"
+      },
+      {
+        "name": "Wheel_Size",
+        "type": "Float64"
+      },
+      {
+        "name": "Bumper_Side_Step",
+        "type": "string"
+      },
+      {
+        "name": "Frameless_Doors",
+        "type": "string"
+      },
+      {
+        "name": "Front_Brakes",
+        "type": "string"
+      },
+      {
+        "name": "Wind_Blocker",
+        "type": "string"
+      },
+      {
+        "name": "Fog_Lamps",
+        "type": "string"
+      },
+      {
+        "name": "Halogen_Headlamps",
+        "type": "string"
+      },
+      {
+        "name": "Manual_Headlamps",
+        "type": "string"
+      },
+      {
+        "name": "Car_Wheels",
+        "type": "string"
+      }
+    ]
+  },
+  "interior": {
+    "columns": [
+      {
+        "name": "ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Variant_ID",
+        "type": "Int64"
+      },
+      {
+        "name": "Center_Arm_Rest",
+        "type": "string"
+      },
+      {
+        "name": "Cargo_area_light",
+        "type": "string"
+      },
+      {
+        "name": "Foldable_Rear_Seats",
+        "type": "string"
+      },
+      {
+        "name": "Front_Seat_Armrest",
+        "type": "string"
+      },
+      {
+        "name": "Power_Outlets",
+        "type": "string"
+      },
+      {
+        "name": "Seat_Adjustments",
+        "type": "string"
+      },
+      {
+        "name": "Footwell_Lights",
+        "type": "string"
+      },
+      {
+        "name": "Scuff_Plate",
+        "type": "string"
+      },
+      {
+        "name": "Seat_Memory",
+        "type": "string"
+      },
+      {
+        "name": "Vanity_Mirror",
+        "type": "string"
+      },
+      {
+        "name": "Heated_Cooled_Seats",
+        "type": "string"
+      },
+      {
+        "name": "Intelligent_Key",
+        "type": "string"
+      },
+      {
+        "name": "Illuminated_Door_Sills",
+        "type": "string"
+      },
+      {
+        "name": "Map_Reading_Lamps",
+        "type": "string"
+      },
+      {
+        "name": "Digital_Clock",
+        "type": "string"
+      },
+      {
+        "name": "Leather_Steering_Wheel",
+        "type": "string"
+      },
+      {
+        "name": "Panoramic_Glass_Roof",
+        "type": "string"
+      },
+      {
+        "name": "Rear_Cupholders",
+        "type": "string"
+      },
+      {
+        "name": "Rear_Pockets",
+        "type": "string"
+      },
+      {
+        "name": "Speed_Sensitive_Power_Steering",
+        "type": "string"
+      },
+      {
+        "name": "Trip_Computer",
+        "type": "string"
+      },
+      {
+        "name": "Welcome_Light",
+        "type": "string"
+      },
+      {
+        "name": "Cupholders",
+        "type": "string"
+      },
+      {
+        "name": "Leather_Seats",
+        "type": "string"
+      },
+      {
+        "name": "Multi_Information_Display",
+        "type": "string"
+      },
+      {
+        "name": "Power_Steering",
+        "type": "string"
+      },
+      {
+        "name": "Rear_Lcd_screens",
+        "type": "string"
+      },
+      {
+        "name": "Seats",
+        "type": "string"
+      },
+      {
+        "name": "Steering_Tilt_Adjustment",
+        "type": "string"
+      },
+      {
+        "name": "Trip_Meter",
+        "type": "string"
+      },
+      {
+        "name": "Bonnet_Light",
+        "type": "string"
+      },
+      {
+        "name": "Alcantara_seats",
+        "type": "string"
+      },
+      {
+        "name": "Center_Console_Box",
+        "type": "string"
+      },
+      {
+        "name": "Central_Locking",
+        "type": "string"
+      },
+      {
+        "name": "Compass",
+        "type": "string"
+      },
+      {
+        "name": "Conversation_Mirror_with_Sunglasses_Holder",
+        "type": "string"
+      },
+      {
+        "name": "DVD",
+        "type": "string"
+      },
+      {
+        "name": "Electric_anti_dazzling_room_mirror",
+        "type": "string"
+      },
+      {
+        "name": "Leather_instrument_panel",
+        "type": "string"
+      },
+      {
+        "name": "Multi_Information_Display_Size",
+        "type": "Float64"
+      },
+      {
+        "name": "Rear_AC_Vents",
+        "type": "string"
+      },
+      {
+        "name": "Rear_Entertainment_System",
+        "type": "string"
+      },
+      {
+        "name": "Silver_Trim",
+        "type": "string"
+      },
+      {
+        "name": "Wood_Trim",
+        "type": "string"
+      },
+      {
+        "name": "Electric_Curtain",
+        "type": "string"
+      },
+      {
+        "name": "Electric_Sunroof",
+        "type": "string"
+      },
+      {
+        "name": "Glove_Box_Cooling",
+        "type": "string"
+      },
+      {
+        "name": "Rear_Blinds",
+        "type": "string"
+      },
+      {
+        "name": "Fabric_Seats",
+        "type": "string"
+      },
+      {
+        "name": "Seat_Adjustment",
+        "type": "string"
+      },
+      {
+        "name": "Urethane_Steering",
+        "type": "string"
+      }
+    ]
+  }
+}

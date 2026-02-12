@@ -47,7 +47,8 @@ CHINESE_BRANDS = [
     'zotye'
 ]
 
-ALL_BRAND = ['toyota','nissan'] + CHINESE_BRANDS
+# ALL_BRAND = ['toyota','nissan'] + CHINESE_BRANDS
+ALL_BRAND = ['nissan']
 
 VARIANTS_SHEETS_NAMES = [
                 'Make Model',

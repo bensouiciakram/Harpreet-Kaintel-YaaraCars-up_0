@@ -1,5 +1,9 @@
+from re import findall 
 from parsel import Selector
 from src.strategies.base_strategy import BaseStrategy
+from nested_lookup import nested_lookup 
+import chompjs 
+
 
 class ExistsCheckStrategy(BaseStrategy):
     """
@@ -36,9 +40,13 @@ class ExistsCheckStrategy(BaseStrategy):
                 'Yes' if the feature exists on the page,
                 'No' otherwise.
         """
-        extracted_values = page_selector.xpath(xpath).getall()
-
+        extracted_values = self.get_extracted_values(page_selector,xpath)
         feature_lower = feature.lower()
         exists = any(feature_lower == value.strip().lower() for value in extracted_values)
-
         return "Yes" if exists else "No"
+    
+    def get_extracted_values(self,page_selector:Selector,xpath:str) -> list[str]:
+        primary_place = chompjs.parse_js_object(
+            page_selector.xpath(xpath).get()
+        )[1]
+        return chompjs.parse_js_object(findall('"data":(\[[\s\S]+?\])',primary_place)[0])

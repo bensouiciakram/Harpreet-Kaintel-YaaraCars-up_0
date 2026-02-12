@@ -1,5 +1,7 @@
 # transformer.py
 from re import findall,sub,split
+from nested_lookup import nested_lookup
+import chompjs
 
 class Transformer:
     """
@@ -17,15 +19,37 @@ class Transformer:
         # Mapping: sheet_name → { column_name → function }
         self._rules = {}
         self.add_rule('Make Model','Year',lambda v:self.clean_with_regex(v,'\d{4}'))
-        self.add_rule('Make Model','Variant',lambda v:self.extract_variant(v))
+        self.add_rule('Make Model','Variant',lambda v:self.extract_jsonld_field(v,'variant'))
         self.add_rule('Make Model','Slug',lambda v:self.create_slug(v))
         self.add_rule('Make Model','Price',lambda v:self.clean_with_regex(v,'\d+,\d+'))
-        self.add_rule('Engine & Power','Var',lambda v:self.extract_variant(v))
-        self.add_rule('Measurements','Var',lambda v:self.extract_variant(v))
-        self.add_rule('Safety Features','Var',lambda v:self.extract_variant(v))
-        self.add_rule('Interior Features','Var',lambda v:self.extract_variant(v))
-        self.add_rule('Exterior Features','Var',lambda v:self.extract_variant(v))
-        self.add_rule('Comfort Features','Var',lambda v:self.extract_variant(v))
+        self.add_rule('Make Model','Model',lambda v:self.clean_with_regex(v,'"model"\s*:\s*"([\s\S]+?)"'))
+        # Extract Make from JSON-LD manufacturer field
+        self.add_rule('Make Model','Make',lambda v:self.extract_jsonld_field(v,'manufacturer'))
+        # Extract Brand from JSON-LD manufacturer field for other sheets
+        self.add_rule('Engine & Power','Brand',lambda v:self.extract_jsonld_field(v,'manufacturer'))
+        self.add_rule('Measurements','Brand',lambda v:self.extract_jsonld_field(v,'manufacturer'))
+        self.add_rule('Safety Features','Brand',lambda v:self.extract_jsonld_field(v,'manufacturer'))
+        self.add_rule('Interior Features','Brand',lambda v:self.extract_jsonld_field(v,'manufacturer'))
+        self.add_rule('Exterior Features','Brand',lambda v:self.extract_jsonld_field(v,'manufacturer'))
+        self.add_rule('Comfort Features','Brand',lambda v:self.extract_jsonld_field(v,'manufacturer'))
+        # Description sheet Make and Model from JSON-LD
+        self.add_rule('Description','Make',lambda v:self.extract_jsonld_field(v,'manufacturer'))
+        self.add_rule('Description','Model',lambda v:self.extract_jsonld_field(v,'model'))
+        self.add_rule('Engine & Power','Modal',lambda v:self.clean_with_regex(v,'"model"\s*:\s*"([\s\S]+?)"'))
+        self.add_rule('Measurements','Modal',lambda v:self.clean_with_regex(v,'"model"\s*:\s*"([\s\S]+?)"'))
+        self.add_rule('Safety Features','Modal',lambda v:self.clean_with_regex(v,'"model"\s*:\s*"([\s\S]+?)"'))
+        self.add_rule('Interior Features','Modal',lambda v:self.clean_with_regex(v,'"model"\s*:\s*"([\s\S]+?)"'))
+        self.add_rule('Exterior Features','Modal',lambda v:self.clean_with_regex(v,'"model"\s*:\s*"([\s\S]+?)"'))
+        self.add_rule('Comfort Features','Modal',lambda v:self.clean_with_regex(v,'"model"\s*:\s*"([\s\S]+?)"'))
+        self.add_rule('Engine & Power','Var',lambda v:self.extract_jsonld_field(v,'variant'))
+        self.add_rule('Engine & Power','Battery Size (kWh)',lambda v:self.clean_with_regex(v,r'battery\\":\\"(\d+)\\"'))
+        self.add_rule('Engine & Power','Battery Range km',lambda v:self.clean_with_regex(v,r'battery_range\\":\\"(\d+)\\"'))
+        self.add_rule('Engine & Power','Motor',lambda v:self.clean_with_regex(v,r'motor\\":\\"([^"]+)\\"'))
+        self.add_rule('Measurements','Var',lambda v:self.extract_jsonld_field(v,'variant'))
+        self.add_rule('Safety Features','Var',lambda v:self.extract_jsonld_field(v,'variant'))
+        self.add_rule('Interior Features','Var',lambda v:self.extract_jsonld_field(v,'variant'))
+        self.add_rule('Exterior Features','Var',lambda v:self.extract_jsonld_field(v,'variant'))
+        self.add_rule('Comfort Features','Var',lambda v:self.extract_jsonld_field(v,'variant'))
         self.add_rule('Description','ID',lambda v:self.clean_with_regex(v,'model/(\d+)'))
         self.add_rule('Description','Model Year',lambda v:self.clean_with_regex(v,'\d{4}'))
         self.add_rule(
@@ -91,3 +115,60 @@ class Transformer:
         title = sub('|'.join(cleaning_list),'-',title.lower())
         title = sub('-+','-',title)
         return title.strip('-')
+    
+    def extract_jsonld_field(self, source: str, field: str) -> str:
+        """
+        Extract a field from JSON-LD script content.
+        
+        Args:
+            source: The JSON-LD script content string
+            field: The field to extract ('manufacturer', 'brand', 'model', etc.)
+            
+        Returns:
+            The extracted value or empty string if not found
+        """
+        try:
+            # Parse the JSON-LD object
+            obj = chompjs.parse_js_object(source)
+            if not obj:
+                return ''
+            
+            # Handle manufacturer field - returns manufacturer.name
+            if field == 'manufacturer':
+                manufacturer_data = nested_lookup('manufacturer', obj)
+                if manufacturer_data and len(manufacturer_data) > 0:
+                    manufacturer = manufacturer_data[0]
+                    if isinstance(manufacturer, dict) and 'name' in manufacturer:
+                        return manufacturer['name'].strip()
+                    elif isinstance(manufacturer, str):
+                        return manufacturer.strip()
+                        
+            # Handle brand field - returns brand.name
+            elif field == 'brand':
+                brand_data = nested_lookup('brand', obj)
+                if brand_data and len(brand_data) > 0:
+                    brand = brand_data[0]
+                    if isinstance(brand, dict) and 'name' in brand:
+                        return brand['name'].strip()
+                    elif isinstance(brand, str):
+                        return brand.strip()
+                        
+            # Handle model field
+            elif field == 'model':
+                model_data = nested_lookup('model', obj)
+                if model_data and len(model_data) > 0:
+                    model = model_data[0]
+                    if isinstance(model, str):
+                        return model.strip()
+                    elif isinstance(model, dict) and 'name' in model:
+                        return model['name'].strip()
+                        
+            # Handle variant (name field in JSON-LD)
+            elif field == 'variant':
+                if isinstance(obj, dict) and 'name' in obj:
+                    return obj['name'].strip()
+                    
+            return ''
+            
+        except Exception:
+            return ''

@@ -306,7 +306,6 @@ class Uploader:
         variants_filename = 'all_variants.csv'
         all_variants_df.to_csv(variants_filename)
         # self.upload_file('variants',variants_filename)
-        breakpoint()
 
 
 

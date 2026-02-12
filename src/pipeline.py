@@ -9,7 +9,9 @@ from src.builder import SpreadsheetBuilder
 from src.transformer import Transformer
 from src.images_downloader import ImagesDownloader
 from src.sheet_extractors.base_sheet_extractor import BaseSheetExtractor
-from src.utils.cache_manager import load_cache,save_cache
+from src.utils.cache_utils.cache_manager import load_cache, save_cache
+from src.utils.cache_utils.cache_service import CacheService
+from pathlib import Path
 
 
 class Pipeline:
@@ -32,16 +34,23 @@ class Pipeline:
             builder: Optional SpreadsheetBuilder instance.
             uploader: Optional Uploader instance.
         """
+        self.variant_url = variant_url
         self._page_selector = page_selector
         # self._page_selector = self.get_page_selector(variant_url)
+        self.sheet_extractors = sheet_extractors
         self.extractor = Extractor(self._page_selector, sheet_extractors)
         self.transformer = Transformer()
         self.image_downloader = ImagesDownloader()
-        self.builder = builder 
+        self.builder = builder
+
+        # Initialize cache service (database disabled)
+        config_path = Path(__file__).parents[1].joinpath('config/config.json')
+        # generate_schema_from_config(config_path)  # Database schema generation disabled
+        self.cache_service = CacheService(config_path)
 
         # self.validator = Validator()
 
-    def run(self) -> dict : 
+    def run(self) -> dict :
         """
         Execute the full pipeline and return final data.
         """
@@ -53,12 +62,9 @@ class Pipeline:
 
         # # 3️⃣ Image download
         # self.image_downloader.download(transformed_data)
-        
+
         # # 4️⃣ add data into spreadsheet
-        self.builder.add_raw_data(transformed_data)
+        if self.builder:
+            self.builder.add_raw_data(transformed_data)
 
         return transformed_data
-    
-    
-
-        

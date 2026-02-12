@@ -9,14 +9,18 @@
     {
       "name": "Make",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+      "xpath": "//script[contains(text(),\"manufacturer\") and @type=\"application/ld+json\"]/text()"
     },
     {
       "name": "Model",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+      "xpath": "//script[@type=\"application/ld+json\" and contains(text(),\"model\")]/text()"
     },
-    { "name": "Variant", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Variant",
+      "type": "value",
+      "xpath": "//script[@type=\"application/ld+json\" and contains(text(),\"model\")]/text()"
+    },
     { "name": "Slug", "type": "value", "xpath": "//h1//text()" },
     {
       "name": "Transmission",
@@ -31,382 +35,382 @@
     {
       "name": "Price",
       "type": "value",
-      "xpath": "//h1//following-sibling::div[3]//text()"
+      "xpath": "//div[@id=\"overview-panel\"]//following-sibling::div[1]//p[contains(text(),\"SAR\") or contains(text(),\"AED\")]"
     },
     {
       "name": "Logo 1",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[1]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[1]/@src"
     },
     {
       "name": "Logo 2",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[2]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[2]/@src"
     },
     {
       "name": "Logo 3",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[3]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[3]/@src"
     },
     {
       "name": "Logo 4",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[4]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[4]/@src"
     },
     {
       "name": "Logo 5",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[5]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[5]/@src"
     },
     {
       "name": "Logo 6",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[6]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[6]/@src"
     },
     {
       "name": "Logo 7",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[7]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[7]/@src"
     },
     {
       "name": "Logo 8",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[8]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[8]/@src"
     },
     {
       "name": "Logo 9",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[9]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[9]/@src"
     },
     {
       "name": "Logo 10",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[10]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[10]/@src"
     },
     {
       "name": "Logo 11",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[11]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[11]/@src"
     },
     {
       "name": "Logo 12",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[12]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[12]/@src"
     },
     {
       "name": "Logo 13",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[13]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[13]/@src"
     },
     {
       "name": "Logo 14",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[14]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[14]/@src"
     },
     {
       "name": "Logo 15",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[15]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[15]/@src"
     },
     {
       "name": "Logo 16",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[16]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[16]/@src"
     },
     {
       "name": "Logo 17",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[17]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[17]/@src"
     },
     {
       "name": "Logo 18",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[18]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[18]/@src"
     },
     {
       "name": "Logo 19",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[19]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[19]/@src"
     },
     {
       "name": "Logo 20",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[20]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[20]/@src"
     },
     {
       "name": "Logo 21",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[21]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[21]/@src"
     },
     {
       "name": "Logo 22",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[22]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[22]/@src"
     },
     {
       "name": "Logo 23",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[23]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[23]/@src"
     },
     {
       "name": "Logo 24",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[24]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[24]/@src"
     },
     {
       "name": "Logo 25",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[25]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[25]/@src"
     },
     {
       "name": "Logo 26",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[26]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[26]/@src"
     },
     {
       "name": "Logo 27",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[27]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[27]/@src"
     },
     {
       "name": "Logo 28",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[28]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[28]/@src"
     },
     {
       "name": "Logo 29",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[29]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[29]/@src"
     },
     {
       "name": "Logo 30",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[30]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[30]/@src"
     },
     {
       "name": "Logo 31",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[31]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[31]/@src"
     },
     {
       "name": "Logo 32",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[32]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[32]/@src"
     },
     {
       "name": "Logo 33",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[33]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[33]/@src"
     },
     {
       "name": "Logo 34",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[34]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[34]/@src"
     },
     {
       "name": "Logo 35",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[35]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[35]/@src"
     },
     {
       "name": "Logo 36",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[36]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[36]/@src"
     },
     {
       "name": "Logo 37",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[37]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[37]/@src"
     },
     {
       "name": "Logo 38",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[38]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[38]/@src"
     },
     {
       "name": "Logo 39",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[39]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[39]/@src"
     },
     {
       "name": "Logo 40",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[40]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[40]/@src"
     },
     {
       "name": "Logo 41",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[41]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[41]/@src"
     },
     {
       "name": "Logo 42",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[42]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[42]/@src"
     },
     {
       "name": "Logo 43",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[43]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[43]/@src"
     },
     {
       "name": "Logo 44",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[44]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[44]/@src"
     },
     {
       "name": "Logo 45",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[45]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[45]/@src"
     },
     {
       "name": "Logo 46",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[46]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[46]/@src"
     },
     {
       "name": "Logo 47",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[47]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[47]/@src"
     },
     {
       "name": "Logo 48",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[48]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[48]/@src"
     },
     {
       "name": "Logo 49",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[49]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[49]/@src"
     },
     {
       "name": "Logo 50",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[50]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[50]/@src"
     },
     {
       "name": "Logo 51",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[51]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[51]/@src"
     },
     {
       "name": "Logo 52",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[52]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[52]/@src"
     },
     {
       "name": "Logo 53",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[53]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[53]/@src"
     },
     {
       "name": "Logo 54",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[54]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[54]/@src"
     },
     {
       "name": "Logo 55",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[55]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[55]/@src"
     },
     {
       "name": "Logo 56",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[56]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[56]/@src"
     },
     {
       "name": "Logo 57",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[57]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[57]/@src"
     },
     {
       "name": "Logo 58",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[58]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[58]/@src"
     },
     {
       "name": "Logo 59",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[59]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[59]/@src"
     },
     {
       "name": "Logo 60",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[60]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[60]/@src"
     },
     {
       "name": "Logo 61",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[61]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[61]/@src"
     },
     {
       "name": "Logo 62",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[62]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[62]/@src"
     },
     {
       "name": "Logo 63",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[63]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[63]/@src"
     },
     {
       "name": "Logo 64",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[64]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[64]/@src"
     },
     {
       "name": "Logo 65",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[65]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[65]/@src"
     },
     {
       "name": "Logo 66",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[66]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[66]/@src"
     },
     {
       "name": "Logo 67",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[67]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[67]/@src"
     },
     {
       "name": "Logo 68",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[68]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[68]/@src"
     },
     {
       "name": "Logo 69",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[69]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[69]/@src"
     },
     {
       "name": "Logo 70",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[70]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[70]/@src"
     },
     {
       "name": "Logo 71",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[71]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[71]/@src"
     },
     {
       "name": "Logo 72",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[72]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[72]/@src"
     },
     {
       "name": "Logo 73",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[73]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[73]/@src"
     },
     {
       "name": "Logo 74",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[74]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[74]/@src"
     },
     {
       "name": "Logo 75",
       "type": "value",
-      "xpath": "((//div[@class=\"slick-track\"])[1]/div)[75]//img/@src"
+      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[75]/@src"
     }
   ],
   "Engine & Power": [
@@ -418,18 +422,22 @@
     {
       "name": "Brand",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+      "xpath": "//script[contains(text(),\"manufacturer\") and @type=\"application/ld+json\"]/text()"
     },
     {
       "name": "Modal",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+      "xpath": "//script[@type=\"application/ld+json\" and contains(text(),\"model\")]/text()"
     },
-    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Var",
+      "type": "value",
+      "xpath": "//script[contains(text(),\"manufacturer\") and @type=\"application/ld+json\"]/text()"
+    },
     {
       "name": "Engine Capacity (liters)",
       "type": "value",
-      "xpath": "//div[contains(text(),\"Engine Capacity (liters)\")]/following-sibling::div//text()"
+      "xpath": "//div[contains(text(),\"Engine Capacity\")]/following-sibling::div//text()"
     },
     {
       "name": "Cylinders",
@@ -444,12 +452,12 @@
     {
       "name": "Fuel Tank Capacity (liters)",
       "type": "value",
-      "xpath": "//div[contains(text(),\"Fuel Tank Capacity (liters)\")]/following-sibling::div//text()"
+      "xpath": "//div[contains(text(),\"Fuel Tank Capacity\")]/following-sibling::div//text()"
     },
     {
       "name": "Fuel Economy (L/100 Km)",
       "type": "value",
-      "xpath": "//div[contains(text(),\"Fuel Economy (L/100 Km)\")]/following-sibling::div//text()"
+      "xpath": "//div[contains(text(),\"Fuel Economy\")]/following-sibling::div//text()"
     },
     {
       "name": "Fuel Type",
@@ -459,12 +467,12 @@
     {
       "name": "Horsepower (bhp)",
       "type": "value",
-      "xpath": "//div[contains(text(),\"Horsepower (bhp)\")]/following-sibling::div//text()"
+      "xpath": "//div[contains(text(),\"Horsepower\")]/following-sibling::div//text()"
     },
     {
       "name": "Torque (Nm)",
       "type": "value",
-      "xpath": "//div[contains(text(),\"Torque (Nm)\")]/following-sibling::div//text()"
+      "xpath": "//div[contains(text(),\"Torque\")]/following-sibling::div//text()"
     },
     {
       "name": "Transmission",
@@ -479,27 +487,27 @@
     {
       "name": "Acceleration 0-100 Km/h (sec)",
       "type": "value",
-      "xpath": "//div[contains(text(),\"Acceleration 0-100 Km/h (sec)\")]/following-sibling::div//text()"
+      "xpath": "//div[contains(text(),\"Acceleration\")]/following-sibling::div//text()"
     },
     {
       "name": "Battery Size (kWh)",
       "type": "value",
-      "xpath": "//div[contains(text(),\"Battery Size (kWh)\")]/following-sibling::div//text()"
+      "xpath": "//script[contains(text(),\"battery_range\")]/text()"
     },
     {
       "name": "Battery Range km",
       "type": "value",
-      "xpath": "//div[contains(text(),\"Battery Range km\")]/following-sibling::div//text()"
+      "xpath": "//script[contains(text(),\"battery_range\")]/text()"
     },
     {
       "name": "Motor",
       "type": "value",
-      "xpath": "//div[contains(text(),\"Motor\")]/following-sibling::div//text()"
+      "xpath": "//script[contains(text(),\"battery_range\")]/text()"
     },
     {
       "name": "Top Speed (Km/h)",
       "type": "value",
-      "xpath": "//div[contains(text(),\"Top Speed (Km/h)\")]/following-sibling::div//text()"
+      "xpath": "//div[contains(text(),\"Top Speed\")]/following-sibling::div//text()"
     }
   ],
   "Measurements": [
@@ -511,38 +519,42 @@
     {
       "name": "Brand",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+      "xpath": "//a[contains(text(),\"New Car Search\")]/ancestor::li/following-sibling::li[1]//text()"
     },
     {
       "name": "Modal",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+      "xpath": "//script[@type=\"application/ld+json\" and contains(text(),\"model\")]/text()"
     },
-    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Var",
+      "type": "value",
+      "xpath": "//script[contains(text(),\"manufacturer\") and @type=\"application/ld+json\"]/text()"
+    },
     {
       "name": "Length (meters)",
       "type": "value",
-      "xpath": "//div[text()=\"Length (meters)\"]/following-sibling::div[1]/text()"
+      "xpath": "//div[text()=\"Length\"]/following-sibling::div[1]/text()"
     },
     {
       "name": "Width (meters)",
       "type": "value",
-      "xpath": "//div[text()=\"Width (meters)\"]/following-sibling::div[1]/text()"
+      "xpath": "//div[text()=\"Width\"]/following-sibling::div[1]/text()"
     },
     {
       "name": "Height (meters)",
       "type": "value",
-      "xpath": "//div[text()=\"Height (meters)\"]/following-sibling::div[1]/text()"
+      "xpath": "//div[text()=\"Height\"]/following-sibling::div[1]/text()"
     },
     {
       "name": "Wheelbase (meters)",
       "type": "value",
-      "xpath": "//div[text()=\"Wheelbase (meters)\"]/following-sibling::div[1]/text()"
+      "xpath": "//div[text()=\"Wheelbase\"]/following-sibling::div[1]/text()"
     },
     {
       "name": "Trunk Capacity (liters)",
       "type": "value",
-      "xpath": "//div[text()=\"Trunk Capacity (liters)\"]/following-sibling::div[1]/text()"
+      "xpath": "//div[text()=\"Trunk Capacity\"]/following-sibling::div[1]/text()"
     }
   ],
   "Safety Features": [
@@ -554,278 +566,282 @@
     {
       "name": "Brand",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+      "xpath": "//a[contains(text(),\"New Car Search\")]/ancestor::li/following-sibling::li[1]//text()"
     },
     {
       "name": "Modal",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+      "xpath": "//script[@type=\"application/ld+json\" and contains(text(),\"model\")]/text()"
     },
-    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Var",
+      "type": "value",
+      "xpath": "//script[contains(text(),\"manufacturer\") and @type=\"application/ld+json\"]/text()"
+    },
     {
       "name": "360 Camera",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Airbags",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "BA (Brake Assist)",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Collision Detection",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Fire Extinguisher",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Immobilizer",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Parking Sensors - Front and Rear",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear Camera",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Anti theft alarm",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Hill Assist",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Parallel Parking Assist",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Attention Assist",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Advanced Air Bags System (AABS)",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Seatbelts - Front Only",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Moving object detection system",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Speed Limiter",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Tire Pressure Monitoring Display",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Vehicle Stability Control (VSC)",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "ABS (Anti-lock Brake System)",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Auto Door Lock",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Differential Lock",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Blind Spot Warning",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "EBD (Electronic Brakeforce Distribution)",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Gas Shock Absorber",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "ISO Fix Child Seat Anchors",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Lane Departure Warning",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Pedestrian airbag",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rollover stability control",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Spare Wheel",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Surround Camera",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Traction Control",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Auto Handbrake Release Function",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Security System",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Tire Repair Kit",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Trailer hitch with cover",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Variable Cylinder Management (VCM)",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Adaptive Brake Lights",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Toolkit",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Acceleration Skid Control",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Active Bonnet",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Active Headrests",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Active Understeer Control (AUC)",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Adaptive Suspension Package",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Anti theft wheel bolts",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Cargo area tie down anchors",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Crosswind Assist",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Door Edge Protector",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Dynamic Damper Control",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Dynamic Stability Control",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "First Aid Kit",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Knee Bag - Driver",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Mudguard - Front",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Torsen Limited Slip Differential",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Safety Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     }
   ],
   "Interior Features": [
@@ -837,268 +853,272 @@
     {
       "name": "Brand",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+      "xpath": "//a[contains(text(),\"New Car Search\")]/ancestor::li/following-sibling::li[1]//text()"
     },
     {
       "name": "Modal",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+      "xpath": "//script[@type=\"application/ld+json\" and contains(text(),\"model\")]/text()"
     },
-    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Var",
+      "type": "value",
+      "xpath": "//script[contains(text(),\"manufacturer\") and @type=\"application/ld+json\"]/text()"
+    },
     {
       "name": "Center Arm Rest",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Cargo area light",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Foldable Rear Seats with 60:40 Split",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Front Seat Armrest",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Power Outlets",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Seat Adjustment - Automatic",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Footwell Lights",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Scuff Plate",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Seat Memory",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Vanity Mirror",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Heated/Cooled Seats",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Intelligent Key",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Illuminated Door Sills",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Map Reading Lamps",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Digital Clock",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Leather Steering Wheel",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Panoramic Glass Roof",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear Cupholders",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear Pockets",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Speed Sensitive Power Steering",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Trip Computer",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Welcome Light",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Cupholders",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Leather Seats",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Multi Information Display",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Power Steering",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear Lcd screens",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Seats - Comfort",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Steering Tilt Adjustment",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Trip Meter",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Bonnet Light",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Alcantara seats",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Center Console Box",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Central Locking",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Compass",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Conversation Mirror with Sunglasses Holder",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "DVD",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Electric anti-dazzling room mirror",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Leather instrument panel",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Multi Information Display Size",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear AC Vents",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear Entertainment System",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Silver Trim",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Wood Trim",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Electric Curtain - Rear",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Electric Sunroof",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Glove Box Cooling",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear Blinds",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Fabric Seats",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Seat Adjustment - Manual",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Urethane Steering",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Interior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     }
   ],
   "Exterior Features": [
@@ -1110,278 +1130,282 @@
     {
       "name": "Brand",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+      "xpath": "//a[contains(text(),\"New Car Search\")]/ancestor::li/following-sibling::li[1]//text()"
     },
     {
       "name": "Modal",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+      "xpath": "//script[@type=\"application/ld+json\" and contains(text(),\"model\")]/text()"
     },
-    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Var",
+      "type": "value",
+      "xpath": "//script[contains(text(),\"manufacturer\") and @type=\"application/ld+json\"]/text()"
+    },
     {
       "name": "Acoustic Hood",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Adaptive Headlights",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Automatic Headlight Range Control",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "High Mount Stop Lamp",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Lock and Unlock Sensing Auto Electric Folding Mirror",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Roof Spoiler",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Illuminated Door handles",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Power Tailgate",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Puddle Lamp",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "LED Taillights",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Auto Headlamps",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Headlight Washers",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Electric Opening and Closing of Luggage Door",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "LED Headlights",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Off-Road tyres",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Wheels - Alloy",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Chrome Exhaust Pipes",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "LED foglights",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Off-Road Dampers",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear Wiper",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Power Windows - Front and Rear",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Chrome Door Handles",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Chrome Plated Radiator Grille",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Chrome Door Mirrors",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Door Mirrors with Side Turn Signal",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear Window Defogger",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Daytime Running Lights - LED",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Electric Door Mirrors",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Acoustic Front Windshield",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Alloy Pedals",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Aluminum Wheels",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Body Colored Grille",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Door Reflectors",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Dual Exhaust Tip",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Fog Lamp - Front and Rear",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Front Bumper - Normal",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "HID Headlights",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear Brakes - Ventilated Discs",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Roof Rails",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Running Board - Standard",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Sonar",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Sports Exhaust System",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Tailgate with Hatch",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Towing Hook",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Wheel Size",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Bumper Side Step",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Frameless Doors",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Front Brakes - Ventilated Discs",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Wind Blocker",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Fog Lamp - Rear Only",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Halogen Headlamps",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Manual Headlamps",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Wheels - Steel",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Exterior Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     }
   ],
   "Comfort Features": [
@@ -1393,283 +1417,287 @@
     {
       "name": "Brand",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+      "xpath": "//a[contains(text(),\"New Car Search\")]/ancestor::li/following-sibling::li[1]//text()"
     },
     {
       "name": "Modal",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+      "xpath": "//script[@type=\"application/ld+json\" and contains(text(),\"model\")]/text()"
     },
-    { "name": "Var", "type": "value", "xpath": "//h1//text()" },
+    {
+      "name": "Var",
+      "type": "value",
+      "xpath": "//script[contains(text(),\"manufacturer\") and @type=\"application/ld+json\"]/text()"
+    },
     {
       "name": "12V Socket - Front Only",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Active Steering",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Apps",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "AUX",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "CD Player",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Drive Computer",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rain Sensing Wipers",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Leather Covered Door Armrest",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Premium Brand Audio System",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "SD Card",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Voice operated control",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Lumbar Support - Manual",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Leather gear shift lever",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "MP3",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Automatic AC",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Climate Control",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Electronic handbrake",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Internet Connectivity",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Navigation System",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Radio",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear audio controls",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Touchscreen",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Wireless Headphones",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "360-Degree Camera",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Adaptive Cruise Control",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Audio Controls on Steering Wheel",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Bluetooth",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Cruise Control",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "HDMI",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Keyless Entry",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Push Button Start",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Rear AC Controls",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Touchpad",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Touchscreen Size",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Temperature Display",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Air COnditioning",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Ashtray",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Auto Dimming Mirror",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Cassette player",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Cigar Lighter",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Climate Controlled Seats",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Live Traffic Information",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Microphone",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Night Vision",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Number of Speakers",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Remote Start",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Remote Windows Down",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Speed Sensitive Windshield Wipers",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "USB",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Ambient Lighting",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Cool box",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Cruise Control Switch on Steering",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Odometer",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     },
     {
       "name": "Manual AC",
       "type": "exists",
-      "xpath": "//label[contains(text(),'Comfort Features')]/following-sibling::div[1]//a//text()"
+      "xpath": "//script[contains(text(),\"sell-your-car\")]/text()"
     }
   ],
   "Description": [
@@ -1687,63 +1715,63 @@
     {
       "name": "Make",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[3]//text()"
+      "xpath": "//script[contains(text(),\"manufacturer\") and @type=\"application/ld+json\"]/text()"
     },
     {
       "name": "Model",
       "type": "value",
-      "xpath": "(//span[@itemprop=\"name\"])[4]//text()"
+      "xpath": "//script[@type=\"application/ld+json\" and contains(text(),\"model\")]/text()"
     },
     { "name": "Model Year", "type": "value", "xpath": "//h1//text()" },
     {
       "name": "Price",
       "type": "value",
-      "xpath": "//span[contains(text(),\"Price\")]/ancestor::div[1]/following-sibling::p//text()"
+      "xpath": "//span[contains(text(),\"SAR\") or contains(text(),\"AED\")]//text()"
     },
     {
       "name": "Image_Urls",
       "type": "value_all",
-      "xpath": "(//div[@id=\"overview\"]//div[contains(@class,\"slider\")])[1]//img/@src"
+      "xpath": "//div[@class=\"embla-thumb__viewport\"]/div/div//img/@src"
     },
     {
       "name": "Transmission",
       "type": "value",
-      "xpath": "//span[contains(text(),\"Transmission\")]/ancestor::div[1]/following-sibling::p//text()"
+      "xpath": "//div[contains(text(),\"Transmission\")]/following-sibling::div//text()"
     },
     {
       "name": "Body Style",
       "type": "value",
-      "xpath": "//span[contains(text(),\"Body Style\")]/ancestor::div[1]/following-sibling::p//text()"
+      "xpath": "//div[contains(text(),\"Body Style\")]/following-sibling::div//text()"
     },
     {
       "name": "Fuel Economy",
       "type": "value",
-      "xpath": "//span[contains(text(),\"Fuel Economy\")]/ancestor::div[1]/following-sibling::p//text()"
+      "xpath": "//div[contains(text(),\"Fuel Economy\")]/following-sibling::div//text()"
     },
     {
       "name": "Horse Power",
       "type": "value",
-      "xpath": "//span[contains(text(),\"Horsepower\")]/ancestor::div[1]/following-sibling::p//text()"
+      "xpath": "//div[contains(text(),\"Horsepower\")]/following-sibling::div//text()"
     },
     {
       "name": "Fuel Type",
       "type": "value",
-      "xpath": "//span[contains(text(),\"Fuel Type\")]/ancestor::div[1]/following-sibling::p//text()"
+      "xpath": "//div[contains(text(),\"Fuel Type\")]/following-sibling::div//text()"
     },
     {
       "name": "Top Speed",
       "type": "value",
-      "xpath": "//span[contains(text(),\"Top Speed\")]/ancestor::div[1]/following-sibling::p//text()"
+      "xpath": "//div[contains(text(),\"Top Speed\")]/following-sibling::div//text()"
     },
     {
       "name": "Dimentions",
       "type": "value",
-      "xpath": "//span[contains(text(),\"Dimensions\")]/ancestor::div[1]/following-sibling::p//text()"
+      "xpath": "//div[contains(text(),\"Dimensions\")]/following-sibling::div//text()"
     },
     {
       "name": "Description",
       "type": "value",
-      "xpath": "string(//div[@id=\"description\"])"
+      "xpath": "string(//div[contains(text(),\"Overview\")]/ancestor::div/following-sibling::div[@data-slot=\"card-content\"])"
     }
   ]
 }
