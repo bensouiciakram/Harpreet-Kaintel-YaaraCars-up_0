@@ -15,6 +15,9 @@ class Transformer:
     }
     """
 
+    # Values to strip from all cells (treated as empty)
+    STRIP_VALUES = ['N/A', 'N A']
+
     def __init__(self):
         # Mapping: sheet_name → { column_name → function }
         self._rules = {}
@@ -70,6 +73,19 @@ class Transformer:
 
         self._rules[sheet_name][column_name] = func
 
+    def clean_universal(self, value: str) -> str:
+        """
+        Universal cleaner that strips unwanted values from all cells.
+        Removes all occurrences of STRIP_VALUES from the value.
+        """
+        if not value:
+            return value
+        
+        cleaned = value
+        for strip_val in self.STRIP_VALUES:
+            cleaned = cleaned.replace(strip_val, '')
+        return cleaned.strip()
+
     def transform(self, raw_data: dict) -> dict:
         """
         Loops sheets and columns, applying transformations 
@@ -81,8 +97,7 @@ class Transformer:
             cleaned[sheet_name] = {}
 
             for column_name, value in sheet_dict.items():
-
-                # check if a rule exists
+                # STEP 1: Check if a specific rule exists and apply it
                 rule = (
                     self._rules
                     .get(sheet_name, {})
@@ -90,9 +105,10 @@ class Transformer:
                 )
 
                 if rule:
-                    cleaned_value = rule(value)
-                else:
-                    cleaned_value = value  # no transform applied
+                    value = rule(value)
+
+                # STEP 2: Apply universal cleaner to ALL values
+                cleaned_value = self.clean_universal(value)
 
                 cleaned[sheet_name][column_name] = cleaned_value
 
