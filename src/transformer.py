@@ -28,6 +28,8 @@ class Transformer:
         self.add_rule('Make Model','Model',lambda v:self.clean_with_regex(v,'"model"\s*:\s*"([\s\S]+?)"'))
         # Extract Make from JSON-LD manufacturer field
         self.add_rule('Make Model','Make',lambda v:self.extract_jsonld_field(v,'manufacturer'))
+        # Extract PNG URL from logo script using regex
+        self.add_rule('Make Model','Logo Url',lambda v:self.clean_with_regex(v,'http\S+?\.png'))
         # Extract Brand from JSON-LD manufacturer field for other sheets
         self.add_rule('Engine & Power','Brand',lambda v:self.extract_jsonld_field(v,'manufacturer'))
         self.add_rule('Measurements','Brand',lambda v:self.extract_jsonld_field(v,'manufacturer'))

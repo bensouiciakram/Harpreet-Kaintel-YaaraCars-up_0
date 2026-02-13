@@ -411,6 +411,11 @@
       "name": "Logo 75",
       "type": "value",
       "xpath": "(//img[@width=\"1000\"])[75]/@src"
+    },
+    {
+      "name": "Logo Url",
+      "type": "value",
+      "xpath": "//script[contains(text(),\"make\") and contains(text(),\"logo\")]/text()"
     }
   ],
   "Engine & Power": [
