@@ -40,377 +40,377 @@
     {
       "name": "Logo 1",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[1]/@src"
+      "xpath": "(//img[@width=\"1000\"])[1]/@src"
     },
     {
       "name": "Logo 2",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[2]/@src"
+      "xpath": "(//img[@width=\"1000\"])[2]/@src"
     },
     {
       "name": "Logo 3",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[3]/@src"
+      "xpath": "(//img[@width=\"1000\"])[3]/@src"
     },
     {
       "name": "Logo 4",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[4]/@src"
+      "xpath": "(//img[@width=\"1000\"])[4]/@src"
     },
     {
       "name": "Logo 5",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[5]/@src"
+      "xpath": "(//img[@width=\"1000\"])[5]/@src"
     },
     {
       "name": "Logo 6",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[6]/@src"
+      "xpath": "(//img[@width=\"1000\"])[6]/@src"
     },
     {
       "name": "Logo 7",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[7]/@src"
+      "xpath": "(//img[@width=\"1000\"])[7]/@src"
     },
     {
       "name": "Logo 8",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[8]/@src"
+      "xpath": "(//img[@width=\"1000\"])[8]/@src"
     },
     {
       "name": "Logo 9",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[9]/@src"
+      "xpath": "(//img[@width=\"1000\"])[9]/@src"
     },
     {
       "name": "Logo 10",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[10]/@src"
+      "xpath": "(//img[@width=\"1000\"])[10]/@src"
     },
     {
       "name": "Logo 11",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[11]/@src"
+      "xpath": "(//img[@width=\"1000\"])[11]/@src"
     },
     {
       "name": "Logo 12",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[12]/@src"
+      "xpath": "(//img[@width=\"1000\"])[12]/@src"
     },
     {
       "name": "Logo 13",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[13]/@src"
+      "xpath": "(//img[@width=\"1000\"])[13]/@src"
     },
     {
       "name": "Logo 14",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[14]/@src"
+      "xpath": "(//img[@width=\"1000\"])[14]/@src"
     },
     {
       "name": "Logo 15",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[15]/@src"
+      "xpath": "(//img[@width=\"1000\"])[15]/@src"
     },
     {
       "name": "Logo 16",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[16]/@src"
+      "xpath": "(//img[@width=\"1000\"])[16]/@src"
     },
     {
       "name": "Logo 17",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[17]/@src"
+      "xpath": "(//img[@width=\"1000\"])[17]/@src"
     },
     {
       "name": "Logo 18",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[18]/@src"
+      "xpath": "(//img[@width=\"1000\"])[18]/@src"
     },
     {
       "name": "Logo 19",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[19]/@src"
+      "xpath": "(//img[@width=\"1000\"])[19]/@src"
     },
     {
       "name": "Logo 20",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[20]/@src"
+      "xpath": "(//img[@width=\"1000\"])[20]/@src"
     },
     {
       "name": "Logo 21",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[21]/@src"
+      "xpath": "(//img[@width=\"1000\"])[21]/@src"
     },
     {
       "name": "Logo 22",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[22]/@src"
+      "xpath": "(//img[@width=\"1000\"])[22]/@src"
     },
     {
       "name": "Logo 23",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[23]/@src"
+      "xpath": "(//img[@width=\"1000\"])[23]/@src"
     },
     {
       "name": "Logo 24",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[24]/@src"
+      "xpath": "(//img[@width=\"1000\"])[24]/@src"
     },
     {
       "name": "Logo 25",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[25]/@src"
+      "xpath": "(//img[@width=\"1000\"])[25]/@src"
     },
     {
       "name": "Logo 26",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[26]/@src"
+      "xpath": "(//img[@width=\"1000\"])[26]/@src"
     },
     {
       "name": "Logo 27",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[27]/@src"
+      "xpath": "(//img[@width=\"1000\"])[27]/@src"
     },
     {
       "name": "Logo 28",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[28]/@src"
+      "xpath": "(//img[@width=\"1000\"])[28]/@src"
     },
     {
       "name": "Logo 29",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[29]/@src"
+      "xpath": "(//img[@width=\"1000\"])[29]/@src"
     },
     {
       "name": "Logo 30",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[30]/@src"
+      "xpath": "(//img[@width=\"1000\"])[30]/@src"
     },
     {
       "name": "Logo 31",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[31]/@src"
+      "xpath": "(//img[@width=\"1000\"])[31]/@src"
     },
     {
       "name": "Logo 32",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[32]/@src"
+      "xpath": "(//img[@width=\"1000\"])[32]/@src"
     },
     {
       "name": "Logo 33",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[33]/@src"
+      "xpath": "(//img[@width=\"1000\"])[33]/@src"
     },
     {
       "name": "Logo 34",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[34]/@src"
+      "xpath": "(//img[@width=\"1000\"])[34]/@src"
     },
     {
       "name": "Logo 35",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[35]/@src"
+      "xpath": "(//img[@width=\"1000\"])[35]/@src"
     },
     {
       "name": "Logo 36",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[36]/@src"
+      "xpath": "(//img[@width=\"1000\"])[36]/@src"
     },
     {
       "name": "Logo 37",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[37]/@src"
+      "xpath": "(//img[@width=\"1000\"])[37]/@src"
     },
     {
       "name": "Logo 38",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[38]/@src"
+      "xpath": "(//img[@width=\"1000\"])[38]/@src"
     },
     {
       "name": "Logo 39",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[39]/@src"
+      "xpath": "(//img[@width=\"1000\"])[39]/@src"
     },
     {
       "name": "Logo 40",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[40]/@src"
+      "xpath": "(//img[@width=\"1000\"])[40]/@src"
     },
     {
       "name": "Logo 41",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[41]/@src"
+      "xpath": "(//img[@width=\"1000\"])[41]/@src"
     },
     {
       "name": "Logo 42",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[42]/@src"
+      "xpath": "(//img[@width=\"1000\"])[42]/@src"
     },
     {
       "name": "Logo 43",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[43]/@src"
+      "xpath": "(//img[@width=\"1000\"])[43]/@src"
     },
     {
       "name": "Logo 44",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[44]/@src"
+      "xpath": "(//img[@width=\"1000\"])[44]/@src"
     },
     {
       "name": "Logo 45",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[45]/@src"
+      "xpath": "(//img[@width=\"1000\"])[45]/@src"
     },
     {
       "name": "Logo 46",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[46]/@src"
+      "xpath": "(//img[@width=\"1000\"])[46]/@src"
     },
     {
       "name": "Logo 47",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[47]/@src"
+      "xpath": "(//img[@width=\"1000\"])[47]/@src"
     },
     {
       "name": "Logo 48",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[48]/@src"
+      "xpath": "(//img[@width=\"1000\"])[48]/@src"
     },
     {
       "name": "Logo 49",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[49]/@src"
+      "xpath": "(//img[@width=\"1000\"])[49]/@src"
     },
     {
       "name": "Logo 50",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[50]/@src"
+      "xpath": "(//img[@width=\"1000\"])[50]/@src"
     },
     {
       "name": "Logo 51",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[51]/@src"
+      "xpath": "(//img[@width=\"1000\"])[51]/@src"
     },
     {
       "name": "Logo 52",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[52]/@src"
+      "xpath": "(//img[@width=\"1000\"])[52]/@src"
     },
     {
       "name": "Logo 53",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[53]/@src"
+      "xpath": "(//img[@width=\"1000\"])[53]/@src"
     },
     {
       "name": "Logo 54",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[54]/@src"
+      "xpath": "(//img[@width=\"1000\"])[54]/@src"
     },
     {
       "name": "Logo 55",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[55]/@src"
+      "xpath": "(//img[@width=\"1000\"])[55]/@src"
     },
     {
       "name": "Logo 56",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[56]/@src"
+      "xpath": "(//img[@width=\"1000\"])[56]/@src"
     },
     {
       "name": "Logo 57",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[57]/@src"
+      "xpath": "(//img[@width=\"1000\"])[57]/@src"
     },
     {
       "name": "Logo 58",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[58]/@src"
+      "xpath": "(//img[@width=\"1000\"])[58]/@src"
     },
     {
       "name": "Logo 59",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[59]/@src"
+      "xpath": "(//img[@width=\"1000\"])[59]/@src"
     },
     {
       "name": "Logo 60",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[60]/@src"
+      "xpath": "(//img[@width=\"1000\"])[60]/@src"
     },
     {
       "name": "Logo 61",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[61]/@src"
+      "xpath": "(//img[@width=\"1000\"])[61]/@src"
     },
     {
       "name": "Logo 62",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[62]/@src"
+      "xpath": "(//img[@width=\"1000\"])[62]/@src"
     },
     {
       "name": "Logo 63",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[63]/@src"
+      "xpath": "(//img[@width=\"1000\"])[63]/@src"
     },
     {
       "name": "Logo 64",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[64]/@src"
+      "xpath": "(//img[@width=\"1000\"])[64]/@src"
     },
     {
       "name": "Logo 65",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[65]/@src"
+      "xpath": "(//img[@width=\"1000\"])[65]/@src"
     },
     {
       "name": "Logo 66",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[66]/@src"
+      "xpath": "(//img[@width=\"1000\"])[66]/@src"
     },
     {
       "name": "Logo 67",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[67]/@src"
+      "xpath": "(//img[@width=\"1000\"])[67]/@src"
     },
     {
       "name": "Logo 68",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[68]/@src"
+      "xpath": "(//img[@width=\"1000\"])[68]/@src"
     },
     {
       "name": "Logo 69",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[69]/@src"
+      "xpath": "(//img[@width=\"1000\"])[69]/@src"
     },
     {
       "name": "Logo 70",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[70]/@src"
+      "xpath": "(//img[@width=\"1000\"])[70]/@src"
     },
     {
       "name": "Logo 71",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[71]/@src"
+      "xpath": "(//img[@width=\"1000\"])[71]/@src"
     },
     {
       "name": "Logo 72",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[72]/@src"
+      "xpath": "(//img[@width=\"1000\"])[72]/@src"
     },
     {
       "name": "Logo 73",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[73]/@src"
+      "xpath": "(//img[@width=\"1000\"])[73]/@src"
     },
     {
       "name": "Logo 74",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[74]/@src"
+      "xpath": "(//img[@width=\"1000\"])[74]/@src"
     },
     {
       "name": "Logo 75",
       "type": "value",
-      "xpath": "(//div[@class=\"embla-thumb__viewport\"]/div/div//img)[75]/@src"
+      "xpath": "(//img[@width=\"1000\"])[75]/@src"
     }
   ],
   "Engine & Power": [
